@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Neuronic 아쿠아포닉스 프로젝트 - AI와 IoT가 결합된 지능형 농업 시스템">
+    <meta name="keywords" content="아쿠아포닉스, AI농업, IoT, 스마트팜, 자동화, 머신러닝, 센서">
+
+    <title>Project - Neuronic Smart Aquaponics</title>
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Korean Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/project.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
+</head>
+<body>
+<!-- Header Navigation -->
+<header class="header" id="header">
+    <nav class="nav">
+        <!-- Logo -->
+        <a href="../index.html" class="logo">
+                <span class="logo-text">
+                    Neuronic
+                    <span class="logo-subtitle">Living × Thinking Systems</span>
+                </span>
+        </a>
+
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </nav>
+
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Navigation Menu -->
+    <div class="nav-menu" id="navMenu">
+        <!-- Scrollable Content -->
+        <div class="nav-menu-content">
+            <ul class="nav-links">
+                <li class="nav-link">
+                    <a href="../index.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                        </svg>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="about.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                        About
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="project.html" class="active">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                        </svg>
+                        Project
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="technology.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        Technology
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="team.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                        Team
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="investment.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                        Investment
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="news.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                        </svg>
+                        News
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="blog.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        </svg>
+                        Blog
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="location.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        </svg>
+                        Location
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="faq.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+                        </svg>
+                        FAQ
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="contact.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        </svg>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Navigation Footer -->
+        <div class="nav-footer">
+            <div class="nav-footer-text">
+                <div class="nav-footer-slogan">
+                    "Where Living Systems<br>meet Thinking Systems"
+                </div>
+                © 2025 Neuronic Team
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main>
+    <!-- Project Hero Section -->
+    <section class="project-hero">
+        <div class="project-hero-background">
+            <div class="project-hero-overlay"></div>
+            <!-- Video Background Placeholder -->
+            <div class="project-hero-video-placeholder"></div>
+        </div>
+        <div class="container">
+            <div class="project-hero-content">
+                <div class="project-badge">🌱 Smart Aquaponics Project</div>
+                <h1 class="project-hero-title">
+                    지능형 아쿠아포닉스<br>
+                    <span class="gradient-text">생태계 시스템</span>
+                </h1>
+                <p class="project-hero-description">
+                    AI와 IoT 기술이 결합된 차세대 농업 시스템으로<br>
+                    물과 영양분의 완벽한 순환을 통해 지속가능한 미래를 만듭니다
+                </p>
+                <div class="project-hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">90%</div>
+                        <div class="stat-label">물 사용량 절약</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">365일</div>
+                        <div class="stat-label">연중 생산</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">화학농약 사용</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-overview section">
+        <div class="container">
+            <h2 class="section-title">프로젝트 개요</h2>
+            <div class="overview-content">
+                <div class="overview-text">
+                    <p class="overview-intro">
+                        본 프로젝트는 수경재배와 아쿠아포닉스 시스템을 결합하여 물과 영양분의 효율적인 순환을 통해
+                        자원을 절약하고 환경을 보호하는 친환경 농업 모델을 구축하고자 합니다.
+                    </p>
+                    <div class="overview-highlights">
+                        <div class="highlight-item">
+                            <h4>🔬 과학적 접근</h4>
+                            <p>pH, 온도, 용존산소, EC 등 다양한 환경 센서 데이터와 식물 성장 이미지를 통합적으로 수집</p>
+                        </div>
+                        <div class="highlight-item">
+                            <h4>👁️ 영상처리 기술</h4>
+                            <p>YOLOv8 기반 컴퓨터 비전으로 식물과 어류의 실시간 성장 모니터링 및 자동 수확/채집 시기 판단</p>
+                        </div>
+                        <div class="highlight-item">
+                            <h4>🤖 AI 기반 분석</h4>
+                            <p>인공지능과 머신러닝 기술로 분석하여 식물의 성장 예측, 이상 징후 탐지, 재배 환경의 자동 최적화</p>
+                        </div>
+                        <div class="highlight-item">
+                            <h4>⚡ 실시간 자동화</h4>
+                            <p>실시간 데이터 기반의 자동 급수, 조명, 영양분 공급 시스템으로 생산성 극대화</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="overview-diagram">
+                    <div class="system-diagram">
+                        <div class="diagram-title">시스템 구조도</div>
+                        <div class="diagram-content">
+                            <div class="diagram-layer">
+                                <div class="layer-title">AI/ML Layer</div>
+                                <div class="layer-items">
+                                    <span>예측 모델</span>
+                                    <span>이상 탐지</span>
+                                    <span>최적화</span>
+                                </div>
+                            </div>
+                            <div class="diagram-layer">
+                                <div class="layer-title">IoT/Control Layer</div>
+                                <div class="layer-items">
+                                    <span>센서 네트워크</span>
+                                    <span>자동 제어</span>
+                                    <span>데이터 수집</span>
+                                </div>
+                            </div>
+                            <div class="diagram-layer">
+                                <div class="layer-title">Physical Layer</div>
+                                <div class="layer-items">
+                                    <span>아쿠아포닉스</span>
+                                    <span>식물</span>
+                                    <span>어류</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Components -->
+    <section class="system-components section">
+        <div class="container">
+            <h2 class="section-title">시스템 구성 요소</h2>
+            <div class="components-grid">
+                <div class="component-card">
+                    <div class="component-icon">🐟</div>
+                    <h3>아쿠아포닉스 시스템</h3>
+                    <div class="component-details">
+                        <p>어류와 식물이 공생하는 순환 생태계</p>
+                        <ul>
+                            <li>어류 사육 탱크</li>
+                            <li>바이오 필터</li>
+                            <li>식물 재배 베드</li>
+                            <li>순환 펌프 시스템</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="component-card">
+                    <div class="component-icon">📊</div>
+                    <h3>센서 네트워크</h3>
+                    <div class="component-details">
+                        <p>실시간 환경 모니터링 시스템</p>
+                        <ul>
+                            <li>pH 센서</li>
+                            <li>온도 센서</li>
+                            <li>용존산소 센서</li>
+                            <li>EC (전기전도도) 센서</li>
+                            <li>수위 센서</li>
+                            <li>조도 센서</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="component-card">
+                    <div class="component-icon">📹</div>
+                    <h3>영상처리 시스템</h3>
+                    <div class="component-details">
+                        <p>YOLOv8 기반 지능형 영상 분석</p>
+                        <ul>
+                            <li>식물 생장 모니터링</li>
+                            <li>어류 성장 추적</li>
+                            <li>자동 수확 시기 판단</li>
+                            <li>질병/이상 징후 탐지</li>
+                            <li>실시간 객체 인식</li>
+                            <li>성장 패턴 분석</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="component-card">
+                    <div class="component-icon">🤖</div>
+                    <h3>AI 제어 시스템</h3>
+                    <div class="component-details">
+                        <p>지능형 분석 및 자동 제어</p>
+                        <ul>
+                            <li>머신러닝 예측 모델</li>
+                            <li>이미지 분석 시스템</li>
+                            <li>이상 징후 탐지</li>
+                            <li>최적화 알고리즘</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="component-card">
+                    <div class="component-icon">⚙️</div>
+                    <h3>자동화 장비</h3>
+                    <div class="component-details">
+                        <p>스마트 제어 하드웨어</p>
+                        <ul>
+                            <li>자동 급식 시스템</li>
+                            <li>LED 조명 제어</li>
+                            <li>펌프 자동 제어</li>
+                            <li>영양분 자동 공급</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="key-features section">
+        <div class="container">
+            <h2 class="section-title">핵심 기능</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-visual">
+                        <div class="feature-icon-large">🧠</div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>AI 기반 성장 예측</h3>
+                        <p>
+                            머신러닝 알고리즘을 활용하여 식물의 성장 패턴을 분석하고
+                            최적의 수확 시기를 예측합니다. 히스토리 데이터와 실시간 센서 데이터를
+                            종합하여 높은 정확도의 예측 모델을 제공합니다.
+                        </p>
+                        <div class="feature-tech">
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Computer Vision</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-item reverse">
+                    <div class="feature-visual">
+                        <div class="feature-icon-large">🔄</div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>실시간 자동 제어</h3>
+                        <p>
+                            IoT 센서로부터 수집된 데이터를 실시간으로 분석하여
+                            급수, 조명, 영양분 공급을 자동으로 조절합니다.
+                            24시간 무인 운영이 가능한 스마트 제어 시스템입니다.
+                        </p>
+                        <div class="feature-tech">
+                            <span class="tech-tag">IoT</span>
+                            <span class="tech-tag">MQTT</span>
+                            <span class="tech-tag">Raspberry Pi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-visual">
+                        <div class="feature-icon-large">📈</div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>데이터 기반 최적화</h3>
+                        <p>
+                            수집된 모든 데이터를 분석하여 시스템 성능을 지속적으로 개선합니다.
+                            A/B 테스트와 통계 분석을 통해 최적의 재배 조건을 찾아내어
+                            생산성과 품질을 동시에 향상시킵니다.
+                        </p>
+                        <div class="feature-tech">
+                            <span class="tech-tag">Data Analytics</span>
+                            <span class="tech-tag">Apache Kafka</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-item reverse">
+                    <div class="feature-visual">
+                        <div class="feature-icon-large">👁️</div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>YOLOv8 영상처리</h3>
+                        <p>
+                            최신 YOLOv8 모델을 활용하여 식물과 어류의 성장을 실시간으로 모니터링합니다.
+                            컴퓨터 비전 기술로 최적의 수확 시기를 자동 판단하고,
+                            질병이나 이상 징후를 조기에 감지하여 예방 조치를 취합니다.
+                        </p>
+                        <div class="feature-tech">
+                            <span class="tech-tag">YOLOv8</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">Object Detection</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="tech-stack section">
+        <div class="container">
+            <h2 class="section-title">기술 스택</h2>
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h3>🤖 AI/ML</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <div class="tech-logo">🧠</div>
+                            <span>TensorFlow</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">🔥</div>
+                            <span>PyTorch</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">🐍</div>
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">📊</div>
+                            <span>Scikit-learn</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3>👁️ Computer Vision</h3>
+                    <div class="tech-items">
+                        <div class="tech-item highlight-tech">
+                            <div class="tech-logo">🎯</div>
+                            <span>YOLOv8</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">📷</div>
+                            <span>OpenCV</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">🖼️</div>
+                            <span>PIL/Pillow</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">📐</div>
+                            <span>NumPy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3>📡 IoT/Hardware</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <div class="tech-logo">🥧</div>
+                            <span>Raspberry Pi</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">📱</div>
+                            <span>MQTT</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">📶</div>
+                            <span>LoRaWAN</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">🔧</div>
+                            <span>GPIO Control</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3>💾 Data/Backend</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <div class="tech-logo">🗄️</div>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">🚀</div>
+                            <span>Apache Kafka</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">🐳</div>
+                            <span>Docker</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">☁️</div>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3>🖥️ Frontend/Mobile</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <div class="tech-logo">⚛️</div>
+                            <span>React</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">📱</div>
+                            <span>React Native</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">📊</div>
+                            <span>D3.js</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">🎨</div>
+                            <span>Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Goals -->
+    <section class="project-goals section">
+        <div class="container">
+            <h2 class="section-title">프로젝트 목표</h2>
+            <div class="goals-content">
+                <div class="goals-main">
+                    <h3>최종 목표</h3>
+                    <p class="goals-description">
+                        다양한 작물과 환경에 적용 가능한 <strong>모듈형 시스템</strong>을 설계하여
+                        실제 농업 현장과 도시농업 등 다양한 분야에 실용적으로 적용할 수 있는
+                        솔루션을 개발하는 것이 최종 목표입니다.
+                    </p>
+
+                    <div class="goals-timeline">
+                        <div class="goal-phase">
+                            <div class="phase-number">01</div>
+                            <div class="phase-content">
+                                <h4>연구 및 프로토타입</h4>
+                                <p>기초 연구, 시스템 설계, 첫 번째 프로토타입 개발</p>
+                                <span class="phase-status current">진행 중</span>
+                            </div>
+                        </div>
+                        <div class="goal-phase">
+                            <div class="phase-number">02</div>
+                            <div class="phase-content">
+                                <h4>AI 모델 최적화</h4>
+                                <p>머신러닝 모델 훈련, 정확도 향상, 실시간 처리 최적화</p>
+                                <span class="phase-status upcoming">예정</span>
+                            </div>
+                        </div>
+                        <div class="goal-phase">
+                            <div class="phase-number">03</div>
+                            <div class="phase-content">
+                                <h4>상용화 및 확장</h4>
+                                <p>제품화, 시장 출시, 다양한 환경으로 확장</p>
+                                <span class="phase-status future">미래</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="goals-metrics">
+                    <h3>성공 지표</h3>
+                    <div class="metrics-grid">
+                        <div class="metric-item">
+                            <div class="metric-value">95%</div>
+                            <div class="metric-label">시스템 안정성</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">3x</div>
+                            <div class="metric-label">생산 효율</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">90%</div>
+                            <div class="metric-label">자원 절약</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">24/7</div>
+                            <div class="metric-label">무인 운영</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project CTA -->
+    <section class="project-cta section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>프로젝트에 참여하고 싶다면?</h2>
+                <p>혁신적인 농업 기술 개발에 함께하세요</p>
+                <div class="cta-buttons">
+                    <a href="technology.html" class="btn btn-primary">기술 자세히 보기</a>
+                    <a href="team.html" class="btn btn-outline">팀 만나보기</a>
+                    <a href="contact.html" class="btn btn-outline">문의하기</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Neuronic</h3>
+                <p>Where Living Systems meet Thinking Systems</p>
+            </div>
+            <div class="footer-links">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="technology.html">Technology</a>
+                <a href="team.html">Team</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Neuronic Team. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript Files -->
+<script src="../js/navigation.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/project.js"></script>
+</body>
+</html>
