@@ -1,6 +1,6 @@
 // blog.js
 
-const BLOG_HOME_URL = "https://neuronic.blog.example.com/feed.json"; // JSON 피드 주소 예시
+const BLOG_HOME_URL = "https://jiwellparm.blog.example.com/feed.json"; // JSON 피드 주소 예시
 
 // Scroll animation
 const observer = new IntersectionObserver((entries) => {

@@ -780,7 +780,7 @@ window.addEventListener('load', () => {
 
     // 개발자 콘솔 메시지
     console.log(`
-%c🔬 Neuronic Technology Stack 🚀
+%c🔬 Jiwell Farm Technology Stack 🚀
 %c
 키보드 단축키:
 • Ctrl + T: 기술 스택 하이라이트

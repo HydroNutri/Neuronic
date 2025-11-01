@@ -427,7 +427,7 @@ window.addEventListener('load', () => {
 
 // 이스터 에그: 개발자 콘솔 메시지
 console.log(`
-%c🌱 Neuronic Project Page 🤖
+%c🌱 Jiwell Farm Project Page 🤖
 %cWhere Living Systems meet Thinking Systems
 
 개발자님, 안녕하세요! 

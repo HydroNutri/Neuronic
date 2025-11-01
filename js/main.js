@@ -19,7 +19,7 @@ window.addEventListener('load', () => {
 
 // 메인 앱 객체
 App.init = function() {
-    console.log('🚀 Neuronic Website Initialized');
+    console.log('🚀 Jiwell Farm Website Initialized');
 
     // 기본 설정
     this.detectDevice();

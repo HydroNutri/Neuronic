@@ -102,17 +102,7 @@
     position: relative;
 }
 
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
-    background: var(--primary-gradient);
-    border-radius: 2px;
-}
+
 
 /* Company Name Meaning Section */
 .name-meaning {

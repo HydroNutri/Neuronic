@@ -19,7 +19,7 @@ function initMap() {
         center: office,
         zoom: 15,
     });
-    new google.maps.Marker({ position: office, map: map, title: "Neuronic" });
+    new google.maps.Marker({ position: office, map: map, title: "Jiwell Farm" });
 }
 
 // 만약 API KEY가 설정되어 있고 자동 실행 안 될 경우 수동으로 콜백
