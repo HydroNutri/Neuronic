@@ -1,0 +1,118 @@
+/* FAQ Hero Section */
+.faq-hero {
+    padding: 6rem 0 4rem;
+    background: linear-gradient(135deg, #2c7a2c 0%, #3b82f6 50%, #1e3a8a 100%);
+    color: white;
+}
+
+.faq-hero h1 {
+    font-size: var(--fs-5xl);
+    font-weight: 800;
+    margin-bottom: var(--spacing-md);
+}
+
+.faq-hero p {
+    font-size: var(--fs-xl);
+    opacity: 0.9;
+}
+
+/* Search Section */
+.faq-search .search-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-md) var(--spacing-xl);
+    box-shadow: var(--shadow-light);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-icon {
+    margin-right: var(--spacing-md);
+    font-size: 1.3rem;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    font-size: var(--fs-base);
+}
+
+/* Category Tabs */
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.category-tab {
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--radius-full);
+    background: var(--bg-light);
+    font-weight: 500;
+    color: var(--primary-green);
+    border: 1px solid transparent;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.category-tab.active {
+    background: var(--primary-gradient);
+    color: white;
+}
+
+/* FAQ Item Styles */
+.faq-item {
+    background: white;
+    border-left: 4px solid transparent;
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--spacing-xl);
+    box-shadow: var(--shadow-light);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.faq-item.open {
+    background-color: rgba(44, 122, 44, 0.05);
+    border-left-color: var(--primary-green);
+    box-shadow: var(--shadow-medium);
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: var(--fs-lg);
+    cursor: pointer;
+    color: var(--primary-green);
+}
+
+.faq-toggle {
+    font-size: var(--fs-lg);
+    margin-left: var(--spacing-sm);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    font-size: var(--fs-base);
+    margin-top: var(--spacing-md);
+    color: var(--text-secondary);
+}
+
+/* Fade-in scroll animation */
+.fade-in-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-in-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

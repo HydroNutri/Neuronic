@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Neuronic Team - 아쿠아포닉스 스마트팜 혁신을 이끄는 전문가들">
+    <title>Team - Neuronic</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/team.css">
+</head>
+<body>
+<!-- Header Navigation -->
+<header class="header" id="header">
+    <nav class="nav">
+        <!-- Logo -->
+        <a href="../index.html" class="logo">
+                <span class="logo-text">
+                    Neuronic
+                    <span class="logo-subtitle">Living × Thinking Systems</span>
+                </span>
+        </a>
+
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </nav>
+
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Navigation Menu -->
+    <div class="nav-menu" id="navMenu">
+        <!-- Scrollable Content -->
+        <div class="nav-menu-content">
+            <ul class="nav-links">
+                <li class="nav-link">
+                    <a href="../index.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                        </svg>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="about.html" class="active">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                        About
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="project.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                        </svg>
+                        Project
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="technology.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        Technology
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="team.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                        Team
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="investment.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                        Investment
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="news.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                        </svg>
+                        News
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="blog.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        </svg>
+                        Blog
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="location.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        </svg>
+                        Location
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="faq.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+                        </svg>
+                        FAQ
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="contact.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        </svg>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Navigation Footer -->
+        <div class="nav-footer">
+            <div class="nav-footer-text">
+                <div class="nav-footer-slogan">
+                    "Where Living Systems<br>meet Thinking Systems"
+                </div>
+                © 2025 Neuronic Team
+            </div>
+        </div>
+    </div>
+</header>
+    
+<!-- Main Content -->
+<main>
+    <!-- Team Hero Section -->
+    <section class="team-hero">
+        <div class="team-hero-overlay"></div>
+
+        <div class="team-hero-content">
+            <h1 class="team-hero-title">Meet Our Team</h1>
+            <p class="team-hero-subtitle">
+                아쿠아포닉스와 AI 기술의 융합으로<br>
+                지속가능한 농업의 미래를 만들어가는 전문가들
+            </p>
+
+            <div class="team-stats">
+                <div class="team-stat">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">전문가</div>
+                </div>
+                <div class="team-stat">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">기술 스택</div>
+                </div>
+                <div class="team-stat">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">혁신 의지</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Overview -->
+    <section class="team-overview section">
+        <div class="container">
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h2>우리의 비전</h2>
+                    <p>
+                        Neuronic 팀은 <strong>Living Systems(생명 시스템)</strong>과 <strong>Thinking Systems(사고 시스템)</strong>을
+                        융합하여 지속가능한 농업의 새로운 패러다임을 제시합니다.
+                    </p>
+                    <p>
+                        각 멤버는 하드웨어, AI, 통신, 데이터, 임베디드 시스템 분야의 전문성을 바탕으로
+                        아쿠아포닉스 시스템의 완전한 자동화와 최적화를 실현합니다.
+                    </p>
+                    <p>
+                        우리는 단순한 기술 개발을 넘어서, 농업의 미래를 바꾸고 환경 문제 해결에
+                        기여하는 혁신적인 솔루션을 만들어가고 있습니다.
+                    </p>
+                </div>
+
+                <div class="team-values">
+                    <div class="value-item">
+                        <div class="value-icon">🚀</div>
+                        <div class="value-title">혁신</div>
+                        <div class="value-desc">최신 AI와 IoT 기술로 농업의 새로운 가능성을 탐구합니다</div>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">🌱</div>
+                        <div class="value-title">지속가능성</div>
+                        <div class="value-desc">환경을 보호하며 효율적인 자원 활용을 추구합니다</div>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">🤝</div>
+                        <div class="value-title">협력</div>
+                        <div class="value-desc">각자의 전문성을 결합하여 시너지를 창출합니다</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Team -->
+    <section class="team-leadership section">
+        <div class="container">
+            <h2 class="section-title">Leadership Team</h2>
+
+            <div class="leadership-grid">
+                <!-- CEO -->
+                <div class="leader-card ceo">
+                    <div class="leader-avatar">유</div>
+                    <h3 class="leader-name">유동규</h3>
+                    <div class="leader-role">CEO & Founder</div>
+
+                    <div class="leader-specialization">
+                        <h4>전문 분야</h4>
+                        <p>프로젝트 관리 · 하드웨어 시스템 설계 · 사업 전략</p>
+                    </div>
+
+                    <div class="leader-responsibilities">
+                        <h4>주요 역할</h4>
+                        <ul>
+                            <li>전체 프로젝트 기획 및 일정 관리</li>
+                            <li>하드웨어 아키텍처 설계</li>
+                            <li>사업 전략 수립 및 기술 로드맵 관리</li>
+                            <li>투자 유치 및 파트너십 관리</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-stack">
+                        <div class="tech-tag">Project Management</div>
+                        <div class="tech-tag">Hardware Design</div>
+                        <div class="tech-tag">Business Development</div>
+                        <div class="tech-tag">Technology Strategy</div>
+                    </div>
+                </div>
+
+                <!-- CTO -->
+                <div class="leader-card cto">
+                    <div class="leader-avatar">황</div>
+                    <h3 class="leader-name">황선준</h3>
+                    <div class="leader-role">CTO</div>
+
+                    <div class="leader-specialization">
+                        <h4>전문 분야</h4>
+                        <p>인공지능 시스템 개발 · 자동화 알고리즘 설계</p>
+                    </div>
+
+                    <div class="leader-responsibilities">
+                        <h4>주요 역할</h4>
+                        <ul>
+                            <li>아쿠아포닉스 AI 제어 알고리즘 개발</li>
+                            <li>환경 데이터 분석을 통한 최적화 모델 구축</li>
+                            <li>자동화 프로그래밍을 통한 시스템 통합</li>
+                            <li>머신러닝 모델을 활용한 예측 및 최적화</li>
+                            <li>웹사이트 구축</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-stack">
+                        <div class="tech-tag">Python</div>
+                        <div class="tech-tag">TensorFlow</div>
+                        <div class="tech-tag">PyTorch</div>
+                        <div class="tech-tag">Automation</div>
+                        <div class="tech-tag">Data Analysis</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Team -->
+    <section class="core-team section">
+        <div class="container">
+            <h2 class="section-title">Core Team Members</h2>
+
+            <div class="team-grid">
+                <!-- Communications Lead -->
+                <div class="member-card communications">
+                    <div class="member-avatar">박</div>
+                    <div class="member-info">
+                        <h3 class="member-name">박세희</h3>
+                        <div class="member-role">Communications Lead</div>
+                        <div class="member-specialization">
+                            통신 프로그래밍 · 네트워크 시스템 설계
+                        </div>
+                    </div>
+
+                    <div class="member-details">
+                        <div class="member-responsibilities">
+                            <h4>주요 역할</h4>
+                            <ul>
+                                <li>IoT 센서와 제어 시스템 간 무선 통신 프로토콜 개발</li>
+                                <li>실시간 데이터 전송 및 원격 모니터링 시스템 구축</li>
+                                <li>클라우드 연동 및 모바일 앱 통신 인터페이스 개발</li>
+                                <li>네트워크 보안 및 안정성을 위한 통신 아키텍처 설계</li>
+                            </ul>
+                        </div>
+
+                        <div class="member-tech-stack">
+                            <div class="tech-tag">C/C++</div>
+                            <div class="tech-tag">Python</div>
+                            <div class="tech-tag">MQTT</div>
+                            <div class="tech-tag">LoRaWAN</div>
+                            <div class="tech-tag">WiFi/Bluetooth</div>
+                            <div class="tech-tag">REST API</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Engineering Lead -->
+                <div class="member-card data">
+                    <div class="member-avatar">김</div>
+                    <div class="member-info">
+                        <h3 class="member-name">김수찬</h3>
+                        <div class="member-role">Data Engineering Lead</div>
+                        <div class="member-specialization">
+                            데이터 수집 및 전처리 · 데이터 엔지니어링
+                        </div>
+                    </div>
+
+                    <div class="member-details">
+                        <div class="member-responsibilities">
+                            <h4>주요 역할</h4>
+                            <ul>
+                                <li>아쿠아포닉스 시스템 내 다양한 센서 데이터 수집 시스템 구축</li>
+                                <li>수질, 온도, pH, 영양분 등 핵심 지표 데이터 전처리</li>
+                                <li>데이터 파이프라인 설계 및 실시간 모니터링 시스템 구축</li>
+                                <li>데이터 품질 관리 및 이상 탐지 알고리즘 개발</li>
+                            </ul>
+                        </div>
+
+                        <div class="member-tech-stack">
+                            <div class="tech-tag">Python</div>
+                            <div class="tech-tag">SQL</div>
+                            <div class="tech-tag">Apache Kafka</div>
+                            <div class="tech-tag">ETL Tools</div>
+                            <div class="tech-tag">Data Visualization</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hardware Engineering Lead -->
+                <div class="member-card hardware">
+                    <div class="member-avatar">김</div>
+                    <div class="member-info">
+                        <h3 class="member-name">김선욱</h3>
+                        <div class="member-role">Hardware Engineering Lead</div>
+                        <div class="member-specialization">
+                            하드웨어 프로그래밍 · 임베디드 시스템 개발
+                        </div>
+                    </div>
+
+                    <div class="member-details">
+                        <div class="member-responsibilities">
+                            <h4>주요 역할</h4>
+                            <ul>
+                                <li>아쿠아포닉스 시스템용 센서 모듈 및 제어 장치 개발</li>
+                                <li>임베디드 시스템 프로그래밍 및 펌웨어 개발</li>
+                                <li>펌프, 에어레이터, 조명 등 하드웨어 제어 시스템 구현</li>
+                                <li>하드웨어 최적화 및 전력 관리 시스템 개발</li>
+                            </ul>
+                        </div>
+
+                        <div class="member-tech-stack">
+                            <div class="tech-tag">C/C++</div>
+                            <div class="tech-tag">Arduino</div>
+                            <div class="tech-tag">Raspberry Pi</div>
+                            <div class="tech-tag">Microcontrollers</div>
+                            <div class="tech-tag">Sensor Interfaces</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Culture -->
+    <section class="team-culture section">
+        <div class="container">
+            <h2 class="section-title">Our Culture</h2>
+
+            <div class="culture-grid">
+                <div class="culture-item">
+                    <div class="culture-icon">🎯</div>
+                    <h3>목표 지향적</h3>
+                    <p>명확한 목표 설정과 체계적인 접근으로 프로젝트를 성공으로 이끕니다.</p>
+                </div>
+
+                <div class="culture-item">
+                    <div class="culture-icon">🔬</div>
+                    <h3>기술 중심적</h3>
+                    <p>최신 기술을 적극 도입하고 지속적인 학습을 통해 전문성을 키워갑니다.</p>
+                </div>
+
+                <div class="culture-item">
+                    <div class="culture-icon">🌐</div>
+                    <h3>오픈 소스</h3>
+                    <p>개방적 협력을 통해 더 나은 솔루션을 만들고 지식을 공유합니다.</p>
+                </div>
+
+                <div class="culture-item">
+                    <div class="culture-icon">♻️</div>
+                    <h3>지속가능성</h3>
+                    <p>환경을 생각하는 기술 개발로 미래 세대를 위한 가치를 창출합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="team-cta section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>함께 미래를 만들어가세요</h2>
+                <p>Neuronic과 함께 아쿠아포닉스 스마트팜의 새로운 가능성을 탐구해보세요</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">문의하기</a>
+                    <a href="project.html" class="btn btn-outline">프로젝트 보기</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- JavaScript Files -->
+<script src="../js/navigation.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Neuronic Contact - 스마트팜 솔루션 문의 페이지">
+    <title>Contact - Neuronic</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+<!-- Header Navigation -->
+<header class="header" id="header">
+    <nav class="nav">
+        <!-- Logo -->
+        <a href="../index.html" class="logo">
+                <span class="logo-text">
+                    Neuronic
+                    <span class="logo-subtitle">Living × Thinking Systems</span>
+                </span>
+        </a>
+
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </nav>
+
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Navigation Menu -->
+    <div class="nav-menu" id="navMenu">
+        <!-- Scrollable Content -->
+        <div class="nav-menu-content">
+            <ul class="nav-links">
+                <li class="nav-link">
+                    <a href="../index.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                        </svg>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="about.html" class="active">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                        About
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="project.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                        </svg>
+                        Project
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="technology.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        Technology
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="team.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                        Team
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="investment.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                        Investment
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="news.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                        </svg>
+                        News
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="blog.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        </svg>
+                        Blog
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="location.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        </svg>
+                        Location
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="faq.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+                        </svg>
+                        FAQ
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="contact.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        </svg>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Navigation Footer -->
+        <div class="nav-footer">
+            <div class="nav-footer-text">
+                <div class="nav-footer-slogan">
+                    "Where Living Systems<br>meet Thinking Systems"
+                </div>
+                © 2025 Neuronic Team
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Hero -->
+    <section class="contact-hero">
+        <div class="container text-center fade-in-scroll">
+            <h1>문의하기</h1>
+            <p>Neuronic 솔루션에 대해 궁금한 점을 남겨주세요.</p>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="contact-main section">
+        <div class="container contact-grid">
+            <!-- Form -->
+            <div class="contact-form fade-in-scroll">
+                <h2>문의 양식</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">이름</label>
+                        <input type="text" id="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">이메일</label>
+                        <input type="email" id="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">문의 유형</label>
+                        <select id="category">
+                            <option value="general">일반 문의</option>
+                            <option value="investment">투자 관련</option>
+                            <option value="partnership">파트너십</option>
+                            <option value="support">기술 지원</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">문의 내용</label>
+                        <textarea id="message" rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">보내기 ✉️</button>
+                </form>
+            </div>
+
+            <!-- Info -->
+            <div class="contact-info fade-in-scroll">
+                <div class="info-card">
+                    <div class="info-icon">📍</div>
+                    <h3>오피스 위치</h3>
+                    <p>서울시 서대문구 연세로 50</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">📧</div>
+                    <h3>이메일 문의</h3>
+                    <p><a href="mailto:hello@neuronic.tech">hello@neuronic.tech</a></p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">🔗</div>
+                    <h3>SNS</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">💼</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">📷</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- JS -->
+<script src="../js/navigation.js"></script>
+<script src="../js/contact.js"></script>
+</body>
+</html>

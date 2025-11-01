@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Neuronic Technology Stack - AI, IoT, 아쿠아포닉스 기술 스택">
+    <title>Technology - Neuronic</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/technology.css">
+</head>
+<body>
+<!-- Header Navigation -->
+<header class="header" id="header">
+    <nav class="nav">
+        <!-- Logo -->
+        <a href="../index.html" class="logo">
+                <span class="logo-text">
+                    Neuronic
+                    <span class="logo-subtitle">Living × Thinking Systems</span>
+                </span>
+        </a>
+
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </nav>
+
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Navigation Menu -->
+    <div class="nav-menu" id="navMenu">
+        <!-- Scrollable Content -->
+        <div class="nav-menu-content">
+            <ul class="nav-links">
+                <li class="nav-link">
+                    <a href="../index.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                        </svg>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="about.html" class="active">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                        About
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="project.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                        </svg>
+                        Project
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="technology.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        Technology
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="team.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                        Team
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="investment.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                        Investment
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="news.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                        </svg>
+                        News
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="blog.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        </svg>
+                        Blog
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="location.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        </svg>
+                        Location
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="faq.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+                        </svg>
+                        FAQ
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="contact.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        </svg>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Navigation Footer -->
+        <div class="nav-footer">
+            <div class="nav-footer-text">
+                <div class="nav-footer-slogan">
+                    "Where Living Systems<br>meet Thinking Systems"
+                </div>
+                © 2025 Neuronic Team
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main>
+    <!-- Tech Hero Section -->
+    <section class="tech-hero">
+        <div class="tech-hero-background"></div>
+        <div class="tech-hero-overlay"></div>
+
+        <div class="tech-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+
+        <div class="tech-hero-content">
+            <div class="tech-badge">Technology Stack</div>
+            <h1 class="tech-hero-title">
+                Advanced <span class="gradient-text">Technology</span>
+            </h1>
+            <p class="tech-hero-description">
+                AI, IoT, 그리고 스마트 자동화 기술로<br>
+                아쿠아포닉스 시스템의 새로운 가능성을 탐구합니다
+            </p>
+        </div>
+    </section>
+
+    <!-- Technology Architecture -->
+    <section class="tech-architecture section">
+        <div class="container">
+            <h2 class="section-title">System Architecture</h2>
+
+            <div class="architecture-diagram">
+                <!-- Presentation Layer -->
+                <div class="arch-layer">
+                    <h3>🖥️ Presentation Layer</h3>
+                    <div class="layer-content">
+                        <div class="tech-box">Web Dashboard</div>
+                        <div class="tech-box">Mobile App</div>
+                        <div class="tech-box">Admin Panel</div>
+                        <div class="tech-box highlight">Real-time Monitoring</div>
+                    </div>
+                </div>
+
+                <!-- Application Layer -->
+                <div class="arch-layer">
+                    <h3>⚙️ Application Layer</h3>
+                    <div class="layer-content">
+                        <div class="tech-box highlight">AI Control System</div>
+                        <div class="tech-box">Data Processing</div>
+                        <div class="tech-box">Alert System</div>
+                        <div class="tech-box">Automation Engine</div>
+                    </div>
+                </div>
+
+                <!-- Communication Layer -->
+                <div class="arch-layer">
+                    <h3>📡 Communication Layer</h3>
+                    <div class="layer-content">
+                        <div class="tech-box">MQTT Broker</div>
+                        <div class="tech-box">LoRaWAN Gateway</div>
+                        <div class="tech-box">WiFi/Bluetooth</div>
+                        <div class="tech-box highlight">Real-time Streaming</div>
+                    </div>
+                </div>
+
+                <!-- Hardware Layer -->
+                <div class="arch-layer">
+                    <h3>🔧 Hardware Layer</h3>
+                    <div class="layer-content">
+                        <div class="tech-box">Sensors</div>
+                        <div class="tech-box highlight">Raspberry Pi 4</div>
+                        <div class="tech-box">Arduino Controllers</div>
+                        <div class="tech-box">Actuators</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI & Machine Learning -->
+    <section class="ai-ml-section section">
+        <div class="container">
+            <h2 class="section-title">AI & Machine Learning</h2>
+
+            <div class="ai-content">
+                <div class="ai-main">
+                    <!-- YOLOv8 Featured -->
+                    <div class="ai-feature featured">
+                        <div class="feature-header">
+                            <div class="feature-icon">🚀</div>
+                            <h3>YOLOv8 Object Detection</h3>
+                            <div class="version-tag">Latest</div>
+                        </div>
+
+                        <div class="feature-description">
+                            <p>
+                                <strong>최신 실시간 객체 탐지 모델</strong>로 식물과 어류의 성장을 정확하게 모니터링하고
+                                최적의 수확/채집 시기를 자동 판단합니다.
+                            </p>
+                        </div>
+
+                        <div class="tech-details">
+                            <h4>🎯 핵심 기능</h4>
+                            <ul>
+                                <li><strong>실시간 처리:</strong> 60fps 고속 영상 분석</li>
+                                <li><strong>높은 정확도:</strong> 96.7% 객체 인식 정확도</li>
+                                <li><strong>다중 클래스:</strong> 식물 잎, 열매, 어류 동시 탐지</li>
+                                <li><strong>성장 추적:</strong> 시계열 데이터 기반 성장 패턴 분석</li>
+                            </ul>
+
+                            <div class="code-snippet">
+                                <div class="code-header">
+                                    <div class="code-tab">
+                                        <span class="code-lang">Python</span>
+                                        <span class="code-file">yolo_detector.py</span>
+                                    </div>
+                                    <div class="code-actions">
+                                        <button class="code-copy" onclick="copyCode(this)">📋 Copy</button>
+                                    </div>
+                                </div>
+                                <pre><code><span class="keyword">from</span> <span class="module">ultralytics</span> <span class="keyword">import</span> <span class="class">YOLO</span>
+<span class="keyword">import</span> <span class="module">cv2</span>
+<span class="keyword">import</span> <span class="module">numpy</span> <span class="keyword">as</span> <span class="module">np</span>
+
+<span class="keyword">class</span> <span class="class">AquaponicsDetector</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(<span class="variable">self</span>):
+        <span class="variable">self</span>.<span class="attribute">model</span> = <span class="class">YOLO</span>(<span class="string">'yolov8n.pt'</span>)
+        <span class="variable">self</span>.<span class="attribute">classes</span> = [<span class="string">'plant'</span>, <span class="string">'leaf'</span>, <span class="string">'fruit'</span>, <span class="string">'fish'</span>]
+
+    <span class="keyword">def</span> <span class="function">detect_growth</span>(<span class="variable">self</span>, <span class="parameter">frame</span>):
+        <span class="variable">results</span> = <span class="variable">self</span>.<span class="attribute">model</span>(<span class="parameter">frame</span>)
+        <span class="keyword">return</span> <span class="variable">self</span>.<span class="method">process_results</span>(<span class="variable">results</span>)</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TensorFlow/PyTorch -->
+                    <div class="ai-feature">
+                        <div class="feature-header">
+                            <div class="feature-icon">🧠</div>
+                            <h3>Deep Learning Framework</h3>
+                        </div>
+
+                        <div class="feature-description">
+                            <p>
+                                TensorFlow와 PyTorch를 활용한 환경 예측 모델로 pH, 온도, 영양분 농도를
+                                사전에 예측하여 최적의 성장 환경을 유지합니다.
+                            </p>
+                        </div>
+
+                        <div class="tech-details">
+                            <h4>📊 예측 모델</h4>
+                            <ul>
+                                <li><strong>환경 예측:</strong> LSTM 기반 시계열 예측</li>
+                                <li><strong>이상 탐지:</strong> Autoencoder를 활용한 anomaly detection</li>
+                                <li><strong>최적화:</strong> 강화학습 기반 자동 제어</li>
+                                <li><strong>분석:</strong> 다변량 회귀 분석으로 성장 요인 파악</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Computer Vision -->
+                    <div class="ai-feature">
+                        <div class="feature-header">
+                            <div class="feature-icon">👁️</div>
+                            <h3>Computer Vision</h3>
+                        </div>
+
+                        <div class="feature-description">
+                            <p>
+                                OpenCV와 딥러닝을 결합한 이미지 분석으로 식물 질병 조기 탐지,
+                                성장 단계 분류, 수확 시기 예측을 자동화합니다.
+                            </p>
+                        </div>
+
+                        <div class="tech-details">
+                            <h4>🔍 분석 기능</h4>
+                            <ul>
+                                <li><strong>질병 탐지:</strong> CNN 기반 잎 질병 분류</li>
+                                <li><strong>성숙도 판단:</strong> 색상 및 크기 분석</li>
+                                <li><strong>성장률 측정:</strong> 3D 볼륨 추정</li>
+                                <li><strong>품질 평가:</strong> 다중 지표 종합 평가</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ai-metrics">
+                    <h3>AI 성능 지표</h3>
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-value">< 50ms</div>
+                            <div class="metric-label">추론 속도</div>
+                            <div class="metric-detail">실시간 처리</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">96.7%</div>
+                            <div class="metric-label">정확도</div>
+                            <div class="metric-detail">객체 탐지</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">10K+</div>
+                            <div class="metric-label">처리량</div>
+                            <div class="metric-detail">시간당 이미지</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">99.9%</div>
+                            <div class="metric-label">가용성</div>
+                            <div class="metric-detail">24/7 운영</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IoT Hardware -->
+    <section class="iot-hardware section">
+        <div class="container">
+            <h2 class="section-title">IoT Hardware Stack</h2>
+
+            <div class="iot-grid">
+                <!-- Sensors -->
+                <div class="iot-category">
+                    <h3>🔬 센서 시스템</h3>
+                    <div class="sensor-list">
+                        <div class="sensor-item">
+                            <div class="sensor-info">
+                                <h4>pH 센서</h4>
+                                <span class="sensor-model">Atlas Scientific pH Kit</span>
+                                <div class="sensor-specs">
+                                    <span>범위: 0-14 pH</span>
+                                    <span>정확도: ±0.002</span>
+                                    <span>온도 보상: 자동</span>
+                                </div>
+                            </div>
+                            <div class="sensor-status online">ONLINE</div>
+                        </div>
+
+                        <div class="sensor-item">
+                            <div class="sensor-info">
+                                <h4>온도 센서</h4>
+                                <span class="sensor-model">DS18B20 Waterproof</span>
+                                <div class="sensor-specs">
+                                    <span>범위: -55°C ~ +125°C</span>
+                                    <span>정확도: ±0.5°C</span>
+                                    <span>분해능: 12-bit</span>
+                                </div>
+                            </div>
+                            <div class="sensor-status online">ONLINE</div>
+                        </div>
+
+                        <div class="sensor-item">
+                            <div class="sensor-info">
+                                <h4>용존산소 센서</h4>
+                                <span class="sensor-model">Atlas Scientific DO Kit</span>
+                                <div class="sensor-specs">
+                                    <span>범위: 0-100 mg/L</span>
+                                    <span>정확도: ±0.05 mg/L</span>
+                                    <span>응답시간: 8초</span>
+                                </div>
+                            </div>
+                            <div class="sensor-status online">ONLINE</div>
+                        </div>
+
+                        <div class="sensor-item">
+                            <div class="sensor-info">
+                                <h4>EC/TDS 센서</h4>
+                                <span class="sensor-model">Atlas Scientific EC Kit</span>
+                                <div class="sensor-specs">
+                                    <span>범위: 0.07-500,000+ μS/cm</span>
+                                    <span>정확도: ±2%</span>
+                                    <span>온도 보상: 자동</span>
+                                </div>
+                            </div>
+                            <div class="sensor-status online">ONLINE</div>
+                        </div>
+
+                        <div class="sensor-item">
+                            <div class="sensor-info">
+                                <h4>수위 센서</h4>
+                                <span class="sensor-model">Ultrasonic HC-SR04</span>
+                                <div class="sensor-specs">
+                                    <span>범위: 2cm - 4m</span>
+                                    <span>정확도: ±3mm</span>
+                                    <span>각도: 15°</span>
+                                </div>
+                            </div>
+                            <div class="sensor-status online">ONLINE</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Computing Stack -->
+                <div class="iot-category">
+                    <h3>💻 컴퓨팅 스택</h3>
+                    <div class="computing-stack">
+                        <div class="computing-item primary">
+                            <div class="computing-header">
+                                <h4>Raspberry Pi 4B</h4>
+                                <div class="computing-role">Main Controller</div>
+                            </div>
+                            <div class="computing-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">CPU:</span>
+                                    <span>Quad-core ARM Cortex-A72</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">RAM:</span>
+                                    <span>8GB LPDDR4</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Storage:</span>
+                                    <span>64GB microSD + 1TB SSD</span>
+                                </div>
+                            </div>
+                            <div class="computing-tasks">
+                                <h5>주요 작업</h5>
+                                <ul>
+                                    <li>AI 모델 추론 실행</li>
+                                    <li>센서 데이터 수집 및 처리</li>
+                                    <li>웹 서버 및 API 운영</li>
+                                    <li>클라우드 연동 및 동기화</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="computing-item">
+                            <div class="computing-header">
+                                <h4>Arduino Uno R3</h4>
+                                <div class="computing-role">Sensor Interface</div>
+                            </div>
+                            <div class="computing-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">MCU:</span>
+                                    <span>ATmega328P</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Flash:</span>
+                                    <span>32KB</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">I/O:</span>
+                                    <span>14 Digital + 6 Analog</span>
+                                </div>
+                            </div>
+                            <div class="computing-tasks">
+                                <h5>주요 작업</h5>
+                                <ul>
+                                    <li>센서 신호 아날로그-디지털 변환</li>
+                                    <li>액추에이터 제어 신호 출력</li>
+                                    <li>실시간 데이터 수집</li>
+                                    <li>Raspberry Pi와 시리얼 통신</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="computing-item">
+                            <div class="computing-header">
+                                <h4>ESP32 DevKit</h4>
+                                <div class="computing-role">Wireless Node</div>
+                            </div>
+                            <div class="computing-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">CPU:</span>
+                                    <span>Dual-core Xtensa LX6</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">RAM:</span>
+                                    <span>520KB SRAM</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">연결:</span>
+                                    <span>WiFi + Bluetooth</span>
+                                </div>
+                            </div>
+                            <div class="computing-tasks">
+                                <h5>주요 작업</h5>
+                                <ul>
+                                    <li>무선 센서 노드 운영</li>
+                                    <li>MQTT 프로토콜 통신</li>
+                                    <li>배터리 전원 관리</li>
+                                    <li>원격 펌웨어 업데이트</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Communication Protocols -->
+            <div class="communication-section">
+                <h3>📡 통신 프로토콜</h3>
+                <div class="protocol-grid">
+                    <div class="protocol-item">
+                        <div class="protocol-header">
+                            <div class="protocol-icon">📨</div>
+                            <h4>MQTT</h4>
+                            <div class="protocol-version">v5.0</div>
+                        </div>
+                        <div class="protocol-description">
+                            <p>경량 메시징 프로토콜로 IoT 디바이스 간 실시간 데이터 전송을 담당합니다.</p>
+                        </div>
+                        <div class="protocol-features">
+                            <div class="feature-tag">QoS 보장</div>
+                            <div class="feature-tag">저전력</div>
+                            <div class="feature-tag">Publish/Subscribe</div>
+                        </div>
+                    </div>
+
+                    <div class="protocol-item">
+                        <div class="protocol-header">
+                            <div class="protocol-icon">📶</div>
+                            <h4>LoRaWAN</h4>
+                            <div class="protocol-version">v1.0.4</div>
+                        </div>
+                        <div class="protocol-description">
+                            <p>장거리 저전력 통신으로 원격 센서 노드와의 안정적인 연결을 제공합니다.</p>
+                        </div>
+                        <div class="protocol-features">
+                            <div class="feature-tag">장거리</div>
+                            <div class="feature-tag">저전력</div>
+                            <div class="feature-tag">확장성</div>
+                        </div>
+                    </div>
+
+                    <div class="protocol-item">
+                        <div class="protocol-header">
+                            <div class="protocol-icon">📡</div>
+                            <h4>WiFi 6</h4>
+                            <div class="protocol-version">802.11ax</div>
+                        </div>
+                        <div class="protocol-description">
+                            <p>고속 무선 연결로 대용량 이미지 데이터와 비디오 스트림을 전송합니다.</p>
+                        </div>
+                        <div class="protocol-features">
+                            <div class="feature-tag">고속</div>
+                            <div class="feature-tag">저지연</div>
+                            <div class="feature-tag">다중 기기</div>
+                        </div>
+                    </div>
+
+                    <div class="protocol-item">
+                        <div class="protocol-header">
+                            <div class="protocol-icon">🔗</div>
+                            <h4>Bluetooth 5.0</h4>
+                            <div class="protocol-version">BLE</div>
+                        </div>
+                        <div class="protocol-description">
+                            <p>근거리 센서와의 효율적인 통신 및 모바일 앱과의 직접 연결을 지원합니다.</p>
+                        </div>
+                        <div class="protocol-features">
+                            <div class="feature-tag">저전력</div>
+                            <div class="feature-tag">근거리</div>
+                            <div class="feature-tag">빠른 페어링</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Management -->
+    <section class="data-management section">
+        <div class="container">
+            <h2 class="section-title">Data Management Pipeline</h2>
+
+            <div class="data-pipeline">
+                <!-- Data Collection -->
+                <div class="pipeline-stage">
+                    <div class="stage-number">1</div>
+                    <div class="stage-content">
+                        <h3>데이터 수집 (Collection)</h3>
+                        <div class="stage-details">
+                            <h4>📊 수집 데이터</h4>
+                            <ul>
+                                <li><strong>센서 데이터:</strong> pH, 온도, 용존산소, EC, 수위</li>
+                                <li><strong>이미지 데이터:</strong> 식물 성장, 어류 행동, 시스템 상태</li>
+                                <li><strong>환경 데이터:</strong> 외부 온도, 습도, 조도, 날씨</li>
+                                <li><strong>시스템 로그:</strong> 펌프 작동, 조명 제어, 에러 로그</li>
+                            </ul>
+
+                            <div class="storage-specs">
+                                <div class="spec-box">
+                                    <span class="spec-title">수집 주기</span>
+                                    <span class="spec-value">30초</span>
+                                </div>
+                                <div class="spec-box">
+                                    <span class="spec-title">데이터 포인트</span>
+                                    <span class="spec-value">2,880/일</span>
+                                </div>
+                                <div class="spec-box">
+                                    <span class="spec-title">저장 용량</span>
+                                    <span class="spec-value">50GB/월</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Processing -->
+                <div class="pipeline-stage">
+                    <div class="stage-number">2</div>
+                    <div class="stage-content">
+                        <h3>데이터 처리 (Processing)</h3>
+                        <div class="stage-details">
+                            <h4>⚡ 실시간 처리</h4>
+                            <ul>
+                                <li><strong>데이터 검증:</strong> 이상값 탐지 및 필터링</li>
+                                <li><strong>정규화:</strong> 센서별 스케일 조정 및 단위 통일</li>
+                                <li><strong>특성 추출:</strong> 이동평균, 변화율, 패턴 분석</li>
+                                <li><strong>실시간 알림:</strong> 임계값 초과 시 즉시 알림</li>
+                            </ul>
+
+                            <div class="processing-metrics">
+                                <div class="metric-mini">
+                                    <span class="metric-value">< 100ms</span>
+                                    <span class="metric-label">처리 지연</span>
+                                </div>
+                                <div class="metric-mini">
+                                    <span class="metric-value">99.9%</span>
+                                    <span class="metric-label">처리 성공률</span>
+                                </div>
+                                <div class="metric-mini">
+                                    <span class="metric-value">24/7</span>
+                                    <span class="metric-label">연속 운영</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Storage -->
+                <div class="pipeline-stage">
+                    <div class="stage-number">3</div>
+                    <div class="stage-content">
+                        <h3>데이터 저장 (Storage)</h3>
+                        <div class="stage-details">
+                            <h4>🗄️ 다층 저장 구조</h4>
+                            <ul>
+                                <li><strong>Hot Storage:</strong> 최근 7일 데이터 (빠른 접근)</li>
+                                <li><strong>Warm Storage:</strong> 최근 3개월 데이터 (일반 접근)</li>
+                                <li><strong>Cold Storage:</strong> 과거 데이터 (아카이브)</li>
+                                <li><strong>Edge Storage:</strong> 로컬 캐시 (오프라인 대응)</li>
+                            </ul>
+
+                            <div class="storage-specs">
+                                <div class="spec-box">
+                                    <span class="spec-title">로컬 저장</span>
+                                    <span class="spec-value">1TB SSD</span>
+                                </div>
+                                <div class="spec-box">
+                                    <span class="spec-title">클라우드</span>
+                                    <span class="spec-value">무제한</span>
+                                </div>
+                                <div class="spec-box">
+                                    <span class="spec-title">백업</span>
+                                    <span class="spec-value">3중화</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Analysis -->
+                <div class="pipeline-stage">
+                    <div class="stage-number">4</div>
+                    <div class="stage-content">
+                        <h3>데이터 분석 (Analysis)</h3>
+                        <div class="stage-details">
+                            <h4>🧮 고급 분석 기능</h4>
+                            <ul>
+                                <li><strong>트렌드 분석:</strong> 장기간 성장 패턴 및 환경 변화 추적</li>
+                                <li><strong>예측 모델링:</strong> 머신러닝 기반 성장 및 수확 시기 예측</li>
+                                <li><strong>최적화:</strong> 자원 사용량 최소화 및 수율 극대화</li>
+                                <li><strong>비교 분석:</strong> 다양한 재배 조건별 성과 비교</li>
+                            </ul>
+
+                            <div class="analysis-features">
+                                <div class="analysis-tag">시계열 분석</div>
+                                <div class="analysis-tag">회귀 분석</div>
+                                <div class="analysis-tag">클러스터링</div>
+                                <div class="analysis-tag">이상 탐지</div>
+                                <div class="analysis-tag">예측 모델</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frontend UI -->
+    <section class="frontend-ui section">
+        <div class="container">
+            <h2 class="section-title">Frontend & User Interface</h2>
+
+            <div class="ui-platforms">
+                <!-- Web Dashboard -->
+                <div class="platform-card">
+                    <div class="platform-header">
+                        <div class="platform-icon">🖥️</div>
+                        <h3>웹 대시보드</h3>
+                        <div class="platform-tag">React</div>
+                    </div>
+
+                    <div class="tech-stack-ui">
+                        <h4>🛠️ 기술 스택</h4>
+                        <div class="ui-tech-grid">
+                            <div class="ui-tech-item">
+                                <span class="tech-name">React 18</span>
+                                <span class="tech-desc">컴포넌트 기반 UI</span>
+                            </div>
+                            <div class="ui-tech-item">
+                                <span class="tech-name">TypeScript</span>
+                                <span class="tech-desc">타입 안전성</span>
+                            </div>
+                            <div class="ui-tech-item">
+                                <span class="tech-name">Next.js</span>
+                                <span class="tech-desc">풀스택 프레임워크</span>
+                            </div>
+                            <div class="ui-tech-item">
+                                <span class="tech-name">Tailwind CSS</span>
+                                <span class="tech-desc">유틸리티 스타일링</span>
+                            </div>
+                            <div class="ui-tech-item">
+                                <span class="tech-name">Chart.js</span>
+                                <span class="tech-desc">데이터 시각화</span>
+                            </div>
+                            <div class="ui-tech-item">
+                                <span class="tech-name">Socket.io</span>
+                                <span class="tech-desc">실시간 통신</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="platform-features">
+                        <h4>✨ 주요 기능</h4>
+                        <ul>
+                            <li>실시간 센서 데이터 모니터링</li>
+                            <li>AI 분석 결과 시각화</li>
+                            <li>시스템 제어 및 설정 관리</li>
+                            <li>알림 및 이벤트 로그 관리</li>
+                            <li>데이터 내보내기 및 보고서 생성</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Mobile App -->
+                <div class="platform-card">
+                    <div class="platform-header">
+                        <div class="platform-icon">📱</div>
+                        <h3>모바일 앱</h3>
+                        <div class="platform-tag">React Native</div>
+                    </div>
+
+                    <div class="tech-stack-ui">
+                        <h4>🛠️ 기술 스택</h4>
+                        <div class="ui-tech-grid">
+                            <div class="ui-tech-item">
+                                <span class="tech-name">React Native</span>
+                                <span class="tech-desc">크로스 플랫폼</span>
+                            </div>
+                            <div class="ui-tech-item">
+                                <span class="tech-name">Expo</span>
+                                <span class="tech-desc">개발 플랫폼</span>
+                            </div>
+                            <div class="ui-tech-item">
+                                <span class="tech-name">Redux</span>
+                                <span class="tech-desc">상태 관리</span>
+                            </div>
+                            <div class="ui-tech-item">
+                                <span class="tech-name">Firebase</span>
+                                <span class="tech-desc">푸시 알림</span>
+                            </div>
+                            <div class="ui-tech-item">
+                                <span class="tech-name">Camera API</span>
+                                <span class="tech-desc">이미지 촬영</span>
+                            </div>
+                            <div class="ui-tech-item">
+                                <span class="tech-name">Bluetooth</span>
+                                <span class="tech-desc">직접 연결</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="platform-features">
+                        <h4>✨ 주요 기능</h4>
+                        <ul>
+                            <li>원격 모니터링 및 제어</li>
+                            <li>실시간 푸시 알림</li>
+                            <li>카메라를 통한 육안 검사</li>
+                            <li>GPS 기반 위치 추적</li>
+                            <li>오프라인 모드 지원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & Infrastructure -->
+    <section class="security-infrastructure section">
+        <div class="container">
+            <h2 class="section-title">보안 & 인프라</h2>
+
+            <div class="security-grid">
+                <!-- Security -->
+                <div class="security-category">
+                    <h3>🔒 보안 시스템</h3>
+                    <div class="security-features">
+                        <div class="security-item">
+                            <div class="security-header">
+                                <h4>데이터 암호화</h4>
+                                <div class="security-level high">HIGH</div>
+                            </div>
+                            <ul>
+                                <li><strong>전송 암호화:</strong> TLS 1.3 end-to-end 암호화</li>
+                                <li><strong>저장 암호화:</strong> AES-256 데이터베이스 암호화</li>
+                                <li><strong>키 관리:</strong> HSM 기반 암호화 키 관리</li>
+                                <li><strong>접근 제어:</strong> OAuth 2.0 + JWT 토큰 인증</li>
+                            </ul>
+                        </div>
+
+                        <div class="security-item">
+                            <div class="security-header">
+                                <h4>네트워크 보안</h4>
+                                <div class="security-level high">HIGH</div>
+                            </div>
+                            <ul>
+                                <li><strong>방화벽:</strong> iptables 기반 패킷 필터링</li>
+                                <li><strong>VPN:</strong> WireGuard 원격 접속 터널</li>
+                                <li><strong>침입 탐지:</strong> 실시간 IDS/IPS 시스템</li>
+                                <li><strong>DDoS 방어:</strong> 클라우드 기반 트래픽 분산</li>
+                            </ul>
+                        </div>
+
+                        <div class="security-item">
+                            <div class="security-header">
+                                <h4>시스템 보안</h4>
+                                <div class="security-level medium">MEDIUM</div>
+                            </div>
+                            <ul>
+                                <li><strong>OS 보안:</strong> 정기적인 보안 패치 적용</li>
+                                <li><strong>컨테이너:</strong> Docker 이미지 취약점 스캔</li>
+                                <li><strong>모니터링:</strong> 24/7 시스템 로그 분석</li>
+                                <li><strong>백업:</strong> 암호화된 자동 백업 시스템</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Infrastructure -->
+                <div class="infrastructure-category">
+                    <h3>☁️ 인프라 스택</h3>
+                    <div class="infrastructure-stack">
+                        <div class="infra-layer">
+                            <h4>클라우드 플랫폼</h4>
+                            <div class="infra-tech">
+                                <div class="tech-box-infra primary">
+                                    <span class="tech-name">AWS</span>
+                                    <span class="tech-version">Primary</span>
+                                    <span class="tech-desc">메인 클라우드</span>
+                                </div>
+                                <div class="tech-box-infra">
+                                    <span class="tech-name">Azure IoT</span>
+                                    <span class="tech-version">Secondary</span>
+                                    <span class="tech-desc">IoT 허브</span>
+                                </div>
+                                <div class="tech-box-infra">
+                                    <span class="tech-name">GCP AI</span>
+                                    <span class="tech-version">AI/ML</span>
+                                    <span class="tech-desc">머신러닝</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="infra-layer">
+                            <h4>컨테이너 & 오케스트레이션</h4>
+                            <div class="infra-tech">
+                                <div class="tech-box-infra primary">
+                                    <span class="tech-name">Docker</span>
+                                    <span class="tech-version">v24.0</span>
+                                    <span class="tech-desc">컨테이너화</span>
+                                </div>
+                                <div class="tech-box-infra">
+                                    <span class="tech-name">Kubernetes</span>
+                                    <span class="tech-version">v1.28</span>
+                                    <span class="tech-desc">오케스트레이션</span>
+                                </div>
+                                <div class="tech-box-infra">
+                                    <span class="tech-name">Helm</span>
+                                    <span class="tech-version">v3.13</span>
+                                    <span class="tech-desc">패키지 관리</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="infra-layer">
+                            <h4>모니터링 & 로깅</h4>
+                            <div class="infra-tech">
+                                <div class="tech-box-infra">
+                                    <span class="tech-name">Prometheus</span>
+                                    <span class="tech-version">v2.45</span>
+                                    <span class="tech-desc">메트릭 수집</span>
+                                </div>
+                                <div class="tech-box-infra">
+                                    <span class="tech-name">Grafana</span>
+                                    <span class="tech-version">v10.1</span>
+                                    <span class="tech-desc">시각화</span>
+                                </div>
+                                <div class="tech-box-infra">
+                                    <span class="tech-name">ELK Stack</span>
+                                    <span class="tech-version">v8.9</span>
+                                    <span class="tech-desc">로그 분석</span>
+                                </div>
+                                <div class="tech-box-infra">
+                                    <span class="tech-name">Jaeger</span>
+                                    <span class="tech-version">v1.48</span>
+                                    <span class="tech-desc">분산 추적</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="infra-layer">
+                            <h4>CI/CD & DevOps</h4>
+                            <div class="infra-tech">
+                                <div class="tech-box-infra primary">
+                                    <span class="tech-name">GitHub Actions</span>
+                                    <span class="tech-version">Primary</span>
+                                    <span class="tech-desc">CI/CD</span>
+                                </div>
+                                <div class="tech-box-infra">
+                                    <span class="tech-name">ArgoCD</span>
+                                    <span class="tech-version">v2.8</span>
+                                    <span class="tech-desc">GitOps</span>
+                                </div>
+                                <div class="tech-box-infra">
+                                    <span class="tech-name">Terraform</span>
+                                    <span class="tech-version">v1.5</span>
+                                    <span class="tech-desc">IaC</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Metrics -->
+    <section class="performance-metrics section">
+        <div class="container">
+            <h2 class="section-title">성능 지표</h2>
+
+            <div class="metrics-dashboard">
+                <div class="metrics-category">
+                    <h3>⚡ 시스템 성능</h3>
+                    <div class="metrics-grid-large">
+                        <div class="metric-card-large">
+                            <div class="metric-icon">⚡</div>
+                            <div class="metric-content">
+                                <div class="metric-value">< 50ms</div>
+                                <div class="metric-label">응답 시간</div>
+                                <div class="metric-detail">평균 API 응답 시간</div>
+                            </div>
+                        </div>
+
+                        <div class="metric-card-large">
+                            <div class="metric-icon">📊</div>
+                            <div class="metric-content">
+                                <div class="metric-value">10K+</div>
+                                <div class="metric-label">처리량</div>
+                                <div class="metric-detail">시간당 데이터 포인트</div>
+                            </div>
+                        </div>
+
+                        <div class="metric-card-large">
+                            <div class="metric-icon">🧠</div>
+                            <div class="metric-content">
+                                <div class="metric-value">15ms</div>
+                                <div class="metric-label">AI 추론</div>
+                                <div class="metric-detail">평균 모델 추론 시간</div>
+                            </div>
+                        </div>
+
+                        <div class="metric-card-large">
+                            <div class="metric-icon">🔄</div>
+                            <div class="metric-content">
+                                <div class="metric-value">99.95%</div>
+                                <div class="metric-label">가용성</div>
+                                <div class="metric-detail">시스템 업타임</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="metrics-category">
+                    <h3>🔧 하드웨어 사양</h3>
+                    <div class="hardware-specs">
+                        <div class="spec-category">
+                            <h4>💻 컴퓨팅 성능</h4>
+                            <div class="spec-list">
+                                <div class="spec-item">
+                                    <span class="spec-name">CPU</span>
+                                    <span class="spec-value">ARM Cortex-A72 1.8GHz</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-name">RAM</span>
+                                    <span class="spec-value">8GB LPDDR4</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-name">Storage</span>
+                                    <span class="spec-value">1TB NVMe SSD</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-name">GPU</span>
+                                    <span class="spec-value">VideoCore VI</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="spec-category">
+                            <h4>📡 연결성</h4>
+                            <div class="spec-list">
+                                <div class="spec-item">
+                                    <span class="spec-name">WiFi</span>
+                                    <span class="spec-value">802.11ax (WiFi 6)</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-name">Bluetooth</span>
+                                    <span class="spec-value">5.2 BLE</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-name">Ethernet</span>
+                                    <span class="spec-value">Gigabit</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-name">LoRa</span>
+                                    <span class="spec-value">915MHz</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="spec-category">
+                            <h4>🔋 전력 관리</h4>
+                            <div class="spec-list">
+                                <div class="spec-item">
+                                    <span class="spec-name">소비전력</span>
+                                    <span class="spec-value">15W (최대)</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-name">대기전력</span>
+                                    <span class="spec-value">3W</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-name">배터리</span>
+                                    <span class="spec-value">리튬 백업</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-name">UPS</span>
+                                    <span class="spec-value">8시간 운영</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Technology Roadmap -->
+    <section class="future-tech section">
+        <div class="container">
+            <h2 class="section-title">기술 로드맵</h2>
+
+            <div class="roadmap-timeline">
+                <!-- Phase 1: Current -->
+                <div class="roadmap-item current">
+                    <div class="roadmap-date">2025 Q1-Q2</div>
+                    <div class="roadmap-content">
+                        <h3>🚀 MVP 개발 완료</h3>
+                        <p>기본 아쿠아포닉스 시스템과 센서 모니터링 기능 구현</p>
+                        <div class="roadmap-techs">
+                            <div class="tech-tag completed">YOLOv8</div>
+                            <div class="tech-tag completed">Raspberry Pi</div>
+                            <div class="tech-tag progress">React Dashboard</div>
+                            <div class="tech-tag progress">MQTT</div>
+                            <div class="tech-tag progress">Basic Sensors</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 2: Near Future -->
+                <div class="roadmap-item upcoming">
+                    <div class="roadmap-date">2025 Q3-Q4</div>
+                    <div class="roadmap-content">
+                        <h3>🧠 AI 고도화</h3>
+                        <p>머신러닝 모델 고도화 및 예측 시스템 구축</p>
+                        <div class="roadmap-techs">
+                            <div class="tech-tag planned">Transformer Models</div>
+                            <div class="tech-tag planned">Edge AI</div>
+                            <div class="tech-tag planned">Reinforcement Learning</div>
+                            <div class="tech-tag planned">Computer Vision++</div>
+                            <div class="tech-tag planned">Mobile App</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 3: Future -->
+                <div class="roadmap-item future">
+                    <div class="roadmap-date">2026 Q1-Q2</div>
+                    <div class="roadmap-content">
+                        <h3>🌐 확장 & 최적화</h3>
+                        <p>다중 시스템 관리 및 클라우드 확장성 구현</p>
+                        <div class="roadmap-techs">
+                            <div class="tech-tag planned">Kubernetes</div>
+                            <div class="tech-tag planned">Microservices</div>
+                            <div class="tech-tag planned">5G Integration</div>
+                            <div class="tech-tag planned">Blockchain IoT</div>
+                            <div class="tech-tag planned">AR/VR Interface</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 4: Vision -->
+                <div class="roadmap-item visionary">
+                    <div class="roadmap-date">2026 Q3+</div>
+                    <div class="roadmap-content">
+                        <h3>🔮 차세대 기술</h3>
+                        <p>양자 컴퓨팅과 신경망 기술을 활용한 혁신적 시스템</p>
+                        <div class="roadmap-techs">
+                            <div class="tech-tag visionary">Quantum ML</div>
+                            <div class="tech-tag visionary">Neural Networks</div>
+                            <div class="tech-tag visionary">Digital Twin</div>
+                            <div class="tech-tag visionary">Autonomous Robots</div>
+                            <div class="tech-tag visionary">6G IoT</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech CTA -->
+    <section class="tech-cta section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>기술로 농업의 미래를 혁신하세요</h2>
+                <p>Neuronic의 최첨단 기술 스택으로 스마트 아쿠아포닉스를 경험해보세요</p>
+                <div class="cta-buttons">
+                    <a href="project.html" class="btn btn-primary">프로젝트 상세보기</a>
+                    <a href="contact.html" class="btn btn-outline">기술 문의하기</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- JavaScript Files -->
+<script src="../js/navigation.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/technology.js"></script>
+</body>
+</html>
