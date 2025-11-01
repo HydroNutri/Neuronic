@@ -628,55 +628,7 @@
     line-height: 1.6;
 }
 
-/* Team CTA */
-.team-cta {
-    background: var(--primary-gradient);
-    color: white;
-    text-align: center;
-}
 
-.team-cta .cta-content h2 {
-    font-size: var(--fs-4xl);
-    font-weight: 700;
-    margin-bottom: var(--spacing-lg);
-}
-
-.team-cta .cta-content p {
-    font-size: var(--fs-xl);
-    margin-bottom: var(--spacing-3xl);
-    opacity: 0.9;
-}
-
-.cta-buttons {
-    display: flex;
-    gap: var(--spacing-lg);
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.cta-buttons .btn {
-    min-width: 180px;
-}
-
-.team-cta .btn-primary {
-    background: white;
-    color: var(--primary-green);
-}
-
-.team-cta .btn-primary:hover {
-    background: #f8f9fa;
-    transform: translateY(-3px);
-}
-
-.team-cta .btn-outline {
-    border-color: white;
-    color: white;
-}
-
-.team-cta .btn-outline:hover {
-    background: white;
-    color: var(--primary-green);
-}
 
 /* Active Navigation Link */
 .nav-link a.active {
