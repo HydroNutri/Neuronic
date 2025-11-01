@@ -8,6 +8,7 @@ class Navigation {
         this.navOverlay = document.getElementById('navOverlay');
         this.header = document.getElementById('header');
         this.navLinks = document.querySelectorAll('.nav-link a');
+        this.closeBtn = document.querySelector('.nav-close-btn');
 
         this.isMenuOpen = false;
 
@@ -29,6 +30,12 @@ class Navigation {
             e.stopPropagation();
             this.toggleMenu();
         });
+
+        if (this.closeBtn) {
+            this.closeBtn.addEventListener('click', () => {
+                this.closeMenu();
+            });
+        }
 
         // 오버레이 클릭
         this.navOverlay.addEventListener('click', () => {

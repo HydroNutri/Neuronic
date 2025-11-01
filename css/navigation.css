@@ -238,6 +238,25 @@
     transform: rotate(-45deg) translate(8px, -8px);
 }
 
+/* Navigation Close Button */
+.nav-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--text-primary);
+    cursor: pointer;
+    z-index: var(--z-modal);
+    padding: 0;
+    line-height: 1;
+}
+
+.nav-close-btn:hover {
+    color: var(--primary-green);
+}
+
 /* Navigation Menu */
 .nav-menu {
     position: fixed;
