@@ -46,12 +46,16 @@
 
 .logo-text {
     margin-left: var(--spacing-sm);
+    background: linear-gradient(to right, #ADFF2F, #008000, #87CEEB, #0000FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.logo-subtitle {
+.logo .logo-subtitle {
     font-size: var(--fs-xs);
     font-weight: 400;
-    color: var(--text-secondary);
+    color: var(--text-white);
     display: block;
     line-height: 1;
     margin-top: 2px;
