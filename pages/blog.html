@@ -3,19 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jiwell Farm FAQ - 아쿠아포닉스 스마트팜에 대한 자주 묻는 질문과 답변">
-    <title>FAQ - Jiwell Farm</title>
+    <meta name="description" content="Jiwell Farm 블로그 - AI × 스마트팜 기술 이야기와 논문, 실험 기록을 만나보세요.">
+    <title>Blog - Jiwell Farm</title>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <!-- CSS Files -->
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/navigation.css">
-    <link rel="stylesheet" href="../css/faq.css">
-    <link rel="stylesheet" href="../css/contact.css">
-    <link rel="stylesheet" href="../css/location.css">
+    <link rel="stylesheet" href="../css/blog.css">
     <link rel="stylesheet" href="../css/scroll-to-top.css">
 </head>
 <body>
@@ -39,7 +37,7 @@
                     <li><a href="#">CI</a></li>
                     <li><a href="#">History</a></li>
                     <li><a href="#">Organization</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </li>
             <li class="nav-link has-dropdown">
@@ -140,76 +138,26 @@
         </div>
     </div>
 </header>
-
 <main>
-    <!-- Hero Section -->
-    <section class="faq-hero section">
+    <!-- Blog Hero -->
+    <section class="blog-hero">
         <div class="container text-center">
-            <h1 class="fade-in-scroll">자주 묻는 질문</h1>
-            <p class="fade-in-scroll">Jiwell Farm 스마트팜 솔루션에 대한 궁금증을 확인해보세요</p>
+            <h1 class="fade-in-scroll">Jiwell Farm 블로그</h1>
+            <p class="fade-in-scroll">AI × 스마트팜 기술 이야기와 논문, 실험 기록을 만나보세요.</p>
         </div>
     </section>
 
-    <!-- Search Bar -->
-    <section class="faq-search section-sm">
+    <!-- Blog List -->
+    <section class="blog-list-section">
         <div class="container">
-            <div class="search-container">
-                <span class="search-icon">🔍</span>
-                <input type="text" id="faqSearch" class="search-input" placeholder="궁금한 내용을 입력하세요...">
-            </div>
-        </div>
-    </section>
-
-    <!-- Category Tabs -->
-    <section class="faq-categories section-sm">
-        <div class="container">
-            <div class="category-tabs">
-                <button class="category-tab active" data-category="all">전체</button>
-                <button class="category-tab" data-category="general">일반</button>
-                <button class="category-tab" data-category="technical">기술</button>
-                <button class="category-tab" data-category="business">비즈니스</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Items -->
-    <section class="faq-content section">
-        <div class="container">
-            <div class="faq-list">
-                <div class="faq-item fade-in-scroll" data-category="general">
-                    <div class="faq-question">
-                        <span>아쿠아포닉스가 무엇인가요?</span>
-                        <span class="faq-toggle">▼</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>수경재배와 어류 양식을 결합한 지속 가능한 농업 시스템입니다.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item fade-in-scroll" data-category="technical">
-                    <div class="faq-question">
-                        <span>AI는 어떤 역할을 하나요?</span>
-                        <span class="faq-toggle">▼</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>환경 데이터를 분석하고 최적의 제어 명령을 자동으로 생성합니다.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item fade-in-scroll" data-category="business">
-                    <div class="faq-question">
-                        <span>투자 유치 현황은 어떤가요?</span>
-                        <span class="faq-toggle">▼</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>현재 시드 투자를 유치 중이며, 스마트팜 관련 VC와 협업 중입니다.</p>
-                    </div>
-                </div>
+            <div id="blogList" class="blog-grid fade-in-scroll">
+                <!-- JavaScript로 블로그 항목이 삽입됩니다 -->
             </div>
         </div>
     </section>
 </main>
 
+<!-- Footer -->
 <footer class="footer">
     <div class="container">
         <div class="footer-content">
@@ -263,7 +211,7 @@
 
 <!-- Scripts -->
 <script src="../js/navigation.js"></script>
-<script src="../js/faq.js"></script>
+<script src="../js/blog.js"></script>
 <script src="../js/scroll-to-top.js"></script>
 </body>
 </html>

@@ -95,6 +95,13 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
 }
 
 /* Typography */
@@ -291,7 +298,7 @@ a:hover {
 .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start; /* Align items to the top */
     margin-bottom: var(--spacing-xl);
 }
 
@@ -307,19 +314,39 @@ a:hover {
     font-size: var(--fs-sm);
 }
 
-.footer-links {
+.footer-links-container {
     display: flex;
+    flex-direction: column; /* Main links vertically */
+    gap: var(--spacing-lg);
+}
+
+.footer-main-link {
+    display: flex;
+    align-items: flex-start; /* Align main link and sub-links to the top */
     gap: var(--spacing-xl);
 }
 
-.footer-links a {
+.footer-main-link > a {
+    font-weight: 700;
+    font-size: var(--fs-lg);
+    color: white;
+    width: 120px; /* Fixed width for main link */
+}
+
+.footer-sub-links {
+    display: flex;
+    gap: var(--spacing-lg); /* Horizontal sub-links */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.footer-sub-links a {
     color: #94a3b8;
     text-decoration: none;
     font-weight: 500;
     transition: var(--transition-normal);
 }
 
-.footer-links a:hover {
+.footer-sub-links a:hover {
     color: var(--secondary-green);
 }
 

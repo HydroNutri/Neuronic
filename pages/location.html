@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jiwell Farm FAQ - 아쿠아포닉스 스마트팜에 대한 자주 묻는 질문과 답변">
-    <title>FAQ - Jiwell Farm</title>
+    <meta name="description" content="Jiwell Farm 오시는 길 - 저희 연구소 및 사무실 위치를 안내드립니다.">
+    <title>Location - Jiwell Farm</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/navigation.css">
-    <link rel="stylesheet" href="../css/faq.css">
-    <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/location.css">
     <link rel="stylesheet" href="../css/scroll-to-top.css">
 </head>
@@ -39,7 +37,7 @@
                     <li><a href="#">CI</a></li>
                     <li><a href="#">History</a></li>
                     <li><a href="#">Organization</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </li>
             <li class="nav-link has-dropdown">
@@ -143,68 +141,25 @@
 
 <main>
     <!-- Hero Section -->
-    <section class="faq-hero section">
+    <section class="location-hero">
         <div class="container text-center">
-            <h1 class="fade-in-scroll">자주 묻는 질문</h1>
-            <p class="fade-in-scroll">Jiwell Farm 스마트팜 솔루션에 대한 궁금증을 확인해보세요</p>
+            <h1 class="fade-in-scroll">오시는 길</h1>
+            <p class="fade-in-scroll">Jiwell Farm의 연구소 및 사무실 위치를 안내드립니다.</p>
         </div>
     </section>
 
-    <!-- Search Bar -->
-    <section class="faq-search section-sm">
+    <!-- Map Section -->
+    <section class="location-map-section">
         <div class="container">
-            <div class="search-container">
-                <span class="search-icon">🔍</span>
-                <input type="text" id="faqSearch" class="search-input" placeholder="궁금한 내용을 입력하세요...">
-            </div>
-        </div>
-    </section>
+            <div id="map" class="map-wrapper fade-in-scroll"></div>
 
-    <!-- Category Tabs -->
-    <section class="faq-categories section-sm">
-        <div class="container">
-            <div class="category-tabs">
-                <button class="category-tab active" data-category="all">전체</button>
-                <button class="category-tab" data-category="general">일반</button>
-                <button class="category-tab" data-category="technical">기술</button>
-                <button class="category-tab" data-category="business">비즈니스</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Items -->
-    <section class="faq-content section">
-        <div class="container">
-            <div class="faq-list">
-                <div class="faq-item fade-in-scroll" data-category="general">
-                    <div class="faq-question">
-                        <span>아쿠아포닉스가 무엇인가요?</span>
-                        <span class="faq-toggle">▼</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>수경재배와 어류 양식을 결합한 지속 가능한 농업 시스템입니다.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item fade-in-scroll" data-category="technical">
-                    <div class="faq-question">
-                        <span>AI는 어떤 역할을 하나요?</span>
-                        <span class="faq-toggle">▼</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>환경 데이터를 분석하고 최적의 제어 명령을 자동으로 생성합니다.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item fade-in-scroll" data-category="business">
-                    <div class="faq-question">
-                        <span>투자 유치 현황은 어떤가요?</span>
-                        <span class="faq-toggle">▼</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>현재 시드 투자를 유치 중이며, 스마트팜 관련 VC와 협업 중입니다.</p>
-                    </div>
-                </div>
+            <div class="location-info fade-in-scroll">
+                <h2>연락처 및 주소</h2>
+                <ul>
+                    <li><strong>주소:</strong> 서울시 서대문구 연세로 50</li>
+                    <li><strong>전화:</strong> +82 10-1234-5678</li>
+                    <li><strong>이메일:</strong> contact@jiwellfarm.tech</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -263,7 +218,7 @@
 
 <!-- Scripts -->
 <script src="../js/navigation.js"></script>
-<script src="../js/faq.js"></script>
+<script src="../js/location.js"></script>
 <script src="../js/scroll-to-top.js"></script>
 </body>
 </html>
