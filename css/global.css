@@ -92,7 +92,6 @@ body {
     line-height: 1.6;
     color: var(--text-primary);
     background-color: var(--bg-white);
-    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     display: flex;
@@ -298,8 +297,12 @@ a:hover {
 .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Align items to the top */
+    align-items: flex-start;
     margin-bottom: var(--spacing-xl);
+}
+
+.footer-brand {
+    flex-shrink: 0;
 }
 
 .footer-brand h3 {
@@ -316,13 +319,13 @@ a:hover {
 
 .footer-links-container {
     display: flex;
-    flex-direction: column; /* Main links vertically */
+    flex-direction: column;
     gap: var(--spacing-lg);
 }
 
 .footer-main-link {
     display: flex;
-    align-items: flex-start; /* Align main link and sub-links to the top */
+    align-items: flex-start;
     gap: var(--spacing-xl);
 }
 
@@ -330,13 +333,14 @@ a:hover {
     font-weight: 700;
     font-size: var(--fs-lg);
     color: white;
-    width: 120px; /* Fixed width for main link */
+    width: 120px;
+    text-align: left;
 }
 
 .footer-sub-links {
     display: flex;
-    gap: var(--spacing-lg); /* Horizontal sub-links */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
 }
 
 .footer-sub-links a {
