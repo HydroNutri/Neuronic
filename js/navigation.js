@@ -8,6 +8,8 @@ class Navigation {
         this.header = document.getElementById('header');
         this.navLinks = document.querySelectorAll('.nav-link a');
         this.closeBtn = document.querySelector('.nav-close-btn');
+        this.desktopDropdowns = document.querySelectorAll('.desktop-links .has-dropdown');
+        this.leaveTimeout = null;
 
         this.isMenuOpen = false;
 
@@ -16,7 +18,41 @@ class Navigation {
 
     init() {
         this.bindEvents();
+        this.bindDropdownEvents();
         this.handleScrollEffect();
+    }
+
+    bindDropdownEvents() {
+        this.desktopDropdowns.forEach(dropdown => {
+            const megaMenu = dropdown.querySelector('.mega-menu-container');
+            if (!megaMenu) return;
+
+            dropdown.addEventListener('mouseenter', () => {
+                clearTimeout(this.leaveTimeout);
+
+                this.desktopDropdowns.forEach(d => {
+                    if (d !== dropdown) {
+                        d.querySelector('.mega-menu-container').classList.remove('visible');
+                    }
+                });
+
+                megaMenu.classList.add('visible');
+            });
+
+            dropdown.addEventListener('mouseleave', () => {
+                this.leaveTimeout = setTimeout(() => {
+                    megaMenu.classList.remove('visible');
+                }, 200);
+            });
+
+            megaMenu.addEventListener('mouseenter', () => {
+                clearTimeout(this.leaveTimeout);
+            });
+
+            megaMenu.addEventListener('mouseleave', () => {
+                megaMenu.classList.remove('visible');
+            });
+        });
     }
 
     bindEvents() {

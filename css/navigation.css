@@ -396,113 +396,86 @@
 
 
 /* Mega Menu Styles */
-
 .mega-menu-container {
-
     position: absolute;
-
     top: 100%;
-
     left: 50%;
-
     transform: translateX(-50vw);
-
     width: 100vw;
-
     background-color: rgba(230, 245, 230, 0.9); /* Light green transparent */
-
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-
-    padding: 4rem 2rem;
-
+    padding: 4rem 0;
     display: none;
-
     z-index: 1000;
-
+    position: absolute; /* For pseudo-element */
 }
 
+.mega-menu-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--primary-green);
+    z-index: 0; /* Behind content */
+}
 
-
+/* Media queries for the width of the pseudo-element */
 @media (min-width: 1200px) {
-
-    .mega-menu-container {
-
-        padding: 4rem calc((100vw - 1200px) / 2);
-
+    .mega-menu-container::before {
+        width: calc((100vw - 1200px) / 2 + 150px + 2rem);
     }
-
 }
 
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .mega-menu-container::before {
+        width: calc(150px + 2rem);
+    }
+}
 
-
-.nav-link.has-dropdown:hover .mega-menu-container {
-
+.mega-menu-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0; /* Removed padding to shift left */
     display: flex;
-
     align-items: flex-start;
-
+    position: relative; /* To be on top of pseudo-element */
+    z-index: 1;
 }
 
-
+.mega-menu-container.visible {
+    display: block;
+}
 
 .mega-menu-title {
-
     font-size: 2rem;
-
     font-weight: 700;
-
-    color: var(--primary-green);
-
-    margin-right: 2rem;
-
+    color: #fff; /* Changed for dark background */
+    margin-right: 2rem; /* Adjusted margin */
     min-width: 150px;
-
 }
-
-
 
 .mega-menu-links {
-
     display: flex;
-
     list-style: none;
-
     padding: 0;
-
     margin: 0;
-
-    gap: 1.5rem;
-
+    gap: 3rem;
+    margin-left: 8rem; /* Adjusted margin */
 }
-
-
 
 .mega-menu-links li a {
-
     color: var(--text-primary);
-
     text-decoration: none;
-
     transition: var(--transition-normal);
-
-    font-size: 1rem;
-
+    font-size: 1.125rem;
 }
-
-
 
 .mega-menu-links li a:hover {
-
     color: var(--primary-green);
-
 }
 
-
-
 /* Hide original dropdown */
-
 .nav-link.has-dropdown .dropdown-menu {
-
     display: none !important;
-
 }
