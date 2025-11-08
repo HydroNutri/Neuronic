@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jiwell Farm - CI (Corporate Identity). 브랜드 아이덴티티와 디자인 시스템">
+    <meta name="keywords" content="Jiwell Farm, CI, 브랜드, 로고, 디자인">
+
+    <title>CI - Jiwell Farm</title>
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/about.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
+    <link rel="stylesheet" href="../css/scroll-to-top.css">
+
+    <style>
+        /* 기본 스타일 초기화 */
+        .ci-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+        }
+
+        /* 헤더 스타일 */
+        .ci-header h1 {
+            font-size: 3em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .ci-header p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 40px;
+        }
+        .ci-header p strong {
+            color: rgba(15, 76, 117, 1);
+        }
+
+        /* 섹션 스타일 */
+        .ci-section h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        /* 심볼 마크 스타일 */
+        .symbol-mark-display {
+            display: flex;
+            gap: 20px;
+            height: 150px;
+            align-items: center;
+        }
+
+        .logo-box {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            border: 1px solid #ddd;
+        }
+
+        /* Green (Primary) */
+        .logo-light {
+            background-color: #fff;
+        }
+        .logo-light .logo-text {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: rgba(44, 122, 44, 0.7);
+        }
+
+        /* Blue (Secondary) */
+        .logo-dark {
+            background-color: rgba(15, 76, 117, 0.8);
+            border: none;
+        }
+        .logo-dark .logo-text {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        /* 메인 컬러 스타일 */
+        .color-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .color-item {
+            display: flex;
+            border: 1px solid #ddd;
+        }
+
+        .color-sample {
+            width: 25%;
+            min-width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: #333;
+            padding: 20px;
+            font-size: 1.2em;
+        }
+
+        .color-info {
+            flex: 1;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .color-info p {
+            margin: 5px 0;
+            color: #444;
+        }
+
+        /* 지정된 색상 적용 */
+        .color-green {
+            background-color: rgba(44, 122, 44, 0.7);
+            color: #fff;
+        }
+        .color-blue {
+            background-color: rgba(15, 76, 117, 0.8);
+            color: #fff;
+        }
+
+        /* 수평선 스타일 */
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 40px 0;
+        }
+
+        /* Brand Story */
+        .brand-story {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .brand-story p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        /* Slogan Section */
+        .slogan-section {
+            background-color: rgba(44, 122, 44, 0.7);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .slogan-main {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .slogan-sub {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        /* Typography */
+        .typography-section {
+            margin-top: 3rem;
+        }
+
+        .font-showcase {
+            background: #f9f9f9;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid #ddd;
+        }
+
+        .font-name {
+            font-size: 0.875rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .font-sample-large {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .font-sample-medium {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .font-sample-small {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Brand Values */
+        .brand-values {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .value-card {
+            background: white;
+            border: 2px solid #ddd;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .value-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .value-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .value-desc {
+            font-size: 0.9375rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Usage Guidelines */
+        .guidelines-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .guideline-card {
+            background: #f9f9f9;
+            padding: 2rem;
+            border: 1px solid #ddd;
+        }
+
+        .guideline-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .guideline-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .guideline-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #ddd;
+            font-size: 0.9375rem;
+            color: #555;
+        }
+
+        .guideline-list li:last-child {
+            border-bottom: none;
+        }
+
+        .guideline-list li::before {
+            content: "✓";
+            color: rgba(44, 122, 44, 0.7);
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        .dont-list li::before {
+            content: "✗";
+            color: #ef4444;
+        }
+
+        @media (max-width: 768px) {
+            .slogan-main {
+                font-size: 1.75rem;
+            }
+
+            .font-sample-large {
+                font-size: 2rem;
+            }
+
+            .logo-text {
+                font-size: 2rem !important;
+            }
+
+            .symbol-mark-display {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .color-item {
+                flex-direction: column;
+            }
+
+            .color-sample {
+                width: 100%;
+                min-height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Header Navigation -->
+<header class="header" id="header">
+    <nav class="nav">
+        <!-- Logo -->
+        <a href="../index.html" class="logo">
+                <span class="logo-text">
+                    Jiwell Farm
+                </span>
+        </a>
+
+        <ul class="nav-links desktop-links">
+            <li class="nav-link"><a href="../index.html">Home</a></li>
+            <li class="nav-link has-dropdown">
+                <a href="about.html">About</a>
+                <div class="mega-menu-container">
+                    <div class="mega-menu-content">
+                        <div class="mega-menu-title">About</div>
+                        <ul class="mega-menu-links">
+                            <li><a href="vision-mission.html">Vision & Mission</a></li>
+                            <li><a href="ci.html">CI</a></li>
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="organization.html">Organization</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-link has-dropdown">
+                <a href="team.html">Technology</a>
+                <div class="mega-menu-container">
+                    <div class="mega-menu-content">
+                        <div class="mega-menu-title">Technology</div>
+                        <ul class="mega-menu-links">
+                            <li><a href="team.html">Technology</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-link has-dropdown">
+                <a href="investment.html">Investment</a>
+                <div class="mega-menu-container">
+                    <div class="mega-menu-content">
+                        <div class="mega-menu-title">Investment</div>
+                        <ul class="mega-menu-links">
+                            <li><a href="investment.html">투자 현황</a></li>
+                            <li><a href="news.html">최신 소식</a></li>
+                            <li><a href="blog.html">블로그</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-link has-dropdown">
+                <a href="faq.html">FAQ</a>
+                <div class="mega-menu-container">
+                    <div class="mega-menu-content">
+                        <div class="mega-menu-title">FAQ</div>
+                        <ul class="mega-menu-links">
+                            <li><a href="faq.html">자주 묻는 질문</a></li>
+                            <li><a href="contact.html">문의하기</a></li>
+                            <li><a href="location.html">오시는 길</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </nav>
+
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Navigation Menu -->
+    <div class="nav-menu" id="navMenu">
+        <button class="nav-close-btn" aria-label="메뉴 닫기">&times;</button>
+        <!-- Scrollable Content -->
+        <div class="nav-menu-content">
+            <ul class="nav-links mobile-links">
+                <li class="nav-link">
+                    <a href="../index.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                        </svg>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="about.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="team.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                        Technology
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="investment.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                        Investment
+                    </a>
+                </li>
+
+
+                <li class="nav-link">
+                    <a href="faq.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+                        </svg>
+                        FAQ
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- Navigation Footer -->
+        <div class="nav-footer">
+            <div class="nav-footer-text">
+                <div class="nav-footer-slogan">
+                    "Where Living Systems<br>meet Thinking Systems"
+                </div>
+                © 2025 Jiwell Farm Team
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main>
+    <!-- Page Hero Section -->
+    <section class="about-hero">
+        <div class="about-hero-background">
+            <div class="about-hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="about-hero-content">
+                <h1 class="about-hero-title">Corporate Identity</h1>
+                <p class="about-hero-subtitle">
+                    브랜드 <span class="highlight">아이덴티티</span>와 <span class="highlight">디자인 시스템</span>
+                </p>
+                <p class="about-hero-description">
+                    Jiwell Farm의 시각적 정체성과 브랜드 가치
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Story -->
+    <section class="ci-section section">
+        <div class="container">
+            <div class="brand-story">
+                <h2 class="section-title">브랜드 스토리</h2>
+                <p>
+                    Jiwell Farm의 브랜드 아이덴티티는 <strong>생명(Living Systems)</strong>과 <strong>지능(Thinking Systems)</strong>의
+                    조화로운 융합을 표현합니다.
+                </p>
+                <p>
+                    자연의 생명력을 상징하는 그린 컬러와 기술의 정밀함을 나타내는 블루 컬러가
+                    우리의 핵심 가치를 시각적으로 전달합니다.
+                </p>
+            </div>
+
+            <!-- Logo Showcase -->
+            <h2>심볼 마크</h2>
+            <div class="symbol-mark-display">
+                <div class="logo-box logo-light">
+                    <div class="logo-text">Jiwell Farm</div>
+                </div>
+                <div class="logo-box logo-dark">
+                    <div class="logo-text">Jiwell Farm</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Slogan -->
+    <section class="ci-section">
+        <div class="container">
+            <div class="slogan-section">
+                <div class="slogan-main">
+                    Where Living Systems<br>meet Thinking Systems
+                </div>
+                <div class="slogan-sub">
+                    생명 시스템과 지능 시스템의 완벽한 융합
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Color Palette -->
+    <section class="ci-section section">
+        <div class="container">
+            <h2>메인 컬러</h2>
+            <div class="color-grid">
+                <div class="color-item">
+                    <div class="color-sample color-green">Green</div>
+                    <div class="color-info">
+                        <p><strong>컬러명:</strong> Green (Primary)</p>
+                        <p><strong>HEX:</strong> #2C7A2C</p>
+                        <p><strong>RGB:</strong> RGB(44, 122, 44)</p>
+                        <p><strong>설명:</strong> 자연과 생명을 상징하는 메인 컬러</p>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-sample color-blue">Blue</div>
+                    <div class="color-info">
+                        <p><strong>컬러명:</strong> Blue (Secondary)</p>
+                        <p><strong>HEX:</strong> #0F4C75</p>
+                        <p><strong>RGB:</strong> RGB(15, 76, 117)</p>
+                        <p><strong>설명:</strong> 기술과 신뢰를 나타내는 보조 컬러</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Typography -->
+    <section class="ci-section section">
+        <div class="container">
+            <h2 class="section-title">타이포그래피</h2>
+
+            <div class="typography-section">
+                <div class="font-showcase">
+                    <div class="font-display">
+                        <div class="font-name">Primary Font - Pretendard</div>
+                        <div class="font-sample-large" style="font-family: 'Pretendard', sans-serif;">
+                            지속가능한 농업의 미래
+                        </div>
+                        <div class="font-sample-medium" style="font-family: 'Pretendard', sans-serif;">
+                            혁신적인 기술로 환경을 보호합니다
+                        </div>
+                        <div class="font-sample-small" style="font-family: 'Pretendard', sans-serif;">
+                            Jiwell Farm은 AI와 IoT 기술을 활용하여 아쿠아포닉스 시스템을 최적화합니다.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="font-showcase">
+                    <div class="font-display">
+                        <div class="font-name">Secondary Font - Inter</div>
+                        <div class="font-sample-large" style="font-family: 'Inter', sans-serif;">
+                            Living × Thinking Systems
+                        </div>
+                        <div class="font-sample-medium" style="font-family: 'Inter', sans-serif;">
+                            Innovation for Sustainable Future
+                        </div>
+                        <div class="font-sample-small" style="font-family: 'Inter', sans-serif;">
+                            Combining nature's wisdom with artificial intelligence to create the future of agriculture.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Jiwell Farm</h3>
+                <p>Where Living Systems <br> meet Thinking Systems</p>
+                <div class="footer-info" style="margin-top: 1rem; font-size: 0.875rem; color: #94a3b8; line-height: 1.6;">
+                    Jiwell Farm CEO. 유동규<br>
+                    E-mail: 유동규메일<br>
+                    Address: 강원특별자치도 원주시 흥업면 연세대길 1 (매지리 1496) <br> 연세대학교 미래캠퍼스 창업보육센터3 307호<br><br>
+                    &copy; 2025 Jiwell Farm Team. All rights reserved.
+                </div>
+            </div>
+            <div class="footer-links-container">
+                <div class="footer-main-link">
+                    <a href="../index.html">Home</a>
+                </div>
+                <div class="footer-main-link">
+                    <a href="about.html">About</a>
+                    <div class="footer-sub-links">
+                        <a href="vision-mission.html">Vision & Mission</a>
+                        <a href="ci.html">CI</a>
+                        <a href="history.html">History</a>
+                        <a href="organization.html">Organization</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-main-link">
+                    <a href="team.html">Technology</a>
+                     <div class="footer-sub-links">
+                        <a href="team.html">Technology</a>
+                    </div>
+                </div>
+                <div class="footer-main-link">
+                    <a href="investment.html">Investment</a>
+                    <div class="footer-sub-links">
+                        <a href="investment.html">투자 현황</a>
+                        <a href="news.html">최신 소식</a>
+                        <a href="blog.html">블로그</a>
+                    </div>
+                </div>
+                <div class="footer-main-link">
+                    <a href="faq.html">FAQ</a>
+                    <div class="footer-sub-links">
+                        <a href="faq.html">자주 묻는 질문</a>
+                        <a href="contact.html">문의하기</a>
+                        <a href="location.html">오시는 길</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript Files -->
+<script src="../js/navigation.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/scroll-to-top.js"></script>
+</body>
+</html>

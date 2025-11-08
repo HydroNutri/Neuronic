@@ -6,6 +6,7 @@
 *.njsproj
 *.sln
 *.sw?
+.claude/
 
 # Operating System files
 .DS_Store
