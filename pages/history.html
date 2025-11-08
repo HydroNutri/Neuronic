@@ -3,17 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jiwell Farm Team - 아쿠아포닉스 스마트팜 혁신을 이끄는 전문가들">
-    <title>Team - Jiwell Farm</title>
+    <meta name="description" content="Jiwell Farm - Our Journey. 우리의 여정과 발전 과정">
+    <meta name="keywords" content="Jiwell Farm, History, 히스토리, 연혁, 발전과정">
+
+    <title>History - Jiwell Farm</title>
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/navigation.css">
-    <link rel="stylesheet" href="../css/team.css">
+    <link rel="stylesheet" href="../css/about.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
     <link rel="stylesheet" href="../css/scroll-to-top.css">
 </head>
 <body>
@@ -24,7 +34,6 @@
         <a href="../index.html" class="logo">
                 <span class="logo-text">
                     Jiwell Farm
-                  <!--  <span class="logo-subtitle">Living × Thinking Systems</span> -->
                 </span>
         </a>
 
@@ -36,9 +45,9 @@
                     <div class="mega-menu-content">
                         <div class="mega-menu-title">About</div>
                         <ul class="mega-menu-links">
-                            <li><a href="#">Vision & Mission</a></li>
+                            <li><a href="vision-mission.html">Vision & Mission</a></li>
                             <li><a href="#">CI</a></li>
-                            <li><a href="#">History</a></li>
+                            <li><a href="history.html">History</a></li>
                             <li><a href="#">Organization</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
@@ -158,79 +167,75 @@
         </div>
     </div>
 </header>
-    
+
 <!-- Main Content -->
 <main>
-    <!-- Team Hero Section -->
-    <section class="team-hero">
-        <div class="team-hero-overlay"></div>
-
-        <div class="team-hero-content">
-            <h1 class="team-hero-title">Meet Our Team</h1>
-            <p class="team-hero-subtitle">
-                아쿠아포닉스와 AI 기술의 융합으로<br>
-                지속가능한 농업의 미래를 만들어가는 전문가들
-            </p>
-
-            <div class="team-stats">
-                <div class="team-stat">
-                    <div class="stat-number">5</div>
-                    <div class="stat-label">전문가</div>
-                </div>
-                <div class="team-stat">
-                    <div class="stat-number">10+</div>
-                    <div class="stat-label">기술 스택</div>
-                </div>
-                <div class="team-stat">
-                    <div class="stat-number">100%</div>
-                    <div class="stat-label">혁신 의지</div>
-                </div>
-            </div>
+    <!-- Page Hero Section -->
+    <section class="about-hero">
+        <div class="about-hero-background">
+            <div class="about-hero-overlay"></div>
         </div>
-    </section>
-
-    <!-- Team Overview -->
-    <section class="team-overview section">
         <div class="container">
-            <div class="overview-content">
-                <div class="overview-text">
-                    <h2>우리의 비전</h2>
-                    <p>
-                        Jiwell Farm 팀은 <strong>Living Systems(생명 시스템)</strong>과 <strong>Thinking Systems(사고 시스템)</strong>을
-                        융합하여 지속가능한 농업의 새로운 패러다임을 제시합니다.
-                    </p>
-                    <p>
-                        각 멤버는 하드웨어, AI, 통신, 데이터, 임베디드 시스템 분야의 전문성을 바탕으로
-                        아쿠아포닉스 시스템의 완전한 자동화와 최적화를 실현합니다.
-                    </p>
-                    <p>
-                        우리는 단순한 기술 개발을 넘어서, 농업의 미래를 바꾸고 환경 문제 해결에
-                        기여하는 혁신적인 솔루션을 만들어가고 있습니다.
-                    </p>
-                </div>
+            <div class="about-hero-content">
+                <h1 class="about-hero-title">Our Journey</h1>
+                <p class="about-hero-subtitle">
+                    우리의 <span class="highlight">여정</span>과 <span class="highlight">발전 과정</span>
+                </p>
+                <p class="about-hero-description">
+                    Jiwell Farm의 시작부터 현재까지의 이야기
+                </p>
+            </div>
+        </div>
+    </section>
 
-                <div class="team-values">
-                    <div class="value-item">
-                        <div class="value-icon">🚀</div>
-                        <div class="value-title">혁신</div>
-                        <div class="value-desc">최신 AI와 IoT 기술로 농업의 새로운 가능성을 탐구합니다</div>
+    <!-- Our Journey Timeline -->
+    <section class="journey-timeline section">
+        <div class="container">
+            <h2 class="section-title">Our Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024.Q4</div>
+                        <h4>프로젝트 시작</h4>
+                        <p>연세대학교 컴퓨터공학과 학생들이 지속가능한 농업 기술에 대한 연구를 시작</p>
                     </div>
-                    <div class="value-item">
-                        <div class="value-icon">🌱</div>
-                        <div class="value-title">지속가능성</div>
-                        <div class="value-desc">환경을 보호하며 효율적인 자원 활용을 추구합니다</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025.Q1</div>
+                        <h4>팀 구성 완료</h4>
+                        <p>AI, IoT, 데이터 엔지니어링, 하드웨어 전문가들로 구성된 다학제 팀 결성</p>
                     </div>
-                    <div class="value-item">
-                        <div class="value-icon">🤝</div>
-                        <div class="value-title">협력</div>
-                        <div class="value-desc">각자의 전문성을 결합하여 시너지를 창출합니다</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025.Q2</div>
+                        <h4>프로토타입 개발</h4>
+                        <p>첫 번째 아쿠아포닉스 시스템 프로토타입 완성 및 AI 알고리즘 개발</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker active"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025.Q3</div>
+                        <h4>현재 - 시스템 최적화</h4>
+                        <p>센서 데이터 수집, 머신러닝 모델 훈련, 자동화 시스템 고도화 진행 중</p>
+                    </div>
+                </div>
+                <div class="timeline-item future">
+                    <div class="timeline-marker future"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025.Q4</div>
+                        <h4>상용화 준비</h4>
+                        <p>투자 유치 및 파일럿 프로젝트 진행, 정식 창업 예정</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
 </main>
 
 <!-- Footer -->
@@ -254,9 +259,9 @@
                 <div class="footer-main-link">
                     <a href="about.html">About</a>
                     <div class="footer-sub-links">
-                        <a href="#">Vision & Mission</a>
+                        <a href="vision-mission.html">Vision & Mission</a>
                         <a href="#">CI</a>
-                        <a href="#">History</a>
+                        <a href="history.html">History</a>
                         <a href="#">Organization</a>
                         <a href="contact.html">Contact</a>
                     </div>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jiwell Farm - Organization. 우리의 조직 문화와 리더십 팀">
+    <meta name="keywords" content="Jiwell Farm, Organization, 조직, 리더십, 팀 문화">
+
+    <title>Organization - Jiwell Farm</title>
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/team.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
+    <link rel="stylesheet" href="../css/scroll-to-top.css">
+</head>
+<body>
+<!-- Header Navigation -->
+<header class="header" id="header">
+    <nav class="nav">
+        <!-- Logo -->
+        <a href="../index.html" class="logo">
+                <span class="logo-text">
+                    Jiwell Farm
+                </span>
+        </a>
+
+        <ul class="nav-links desktop-links">
+            <li class="nav-link"><a href="../index.html">Home</a></li>
+            <li class="nav-link has-dropdown">
+                <a href="about.html">About</a>
+                <div class="mega-menu-container">
+                    <div class="mega-menu-content">
+                        <div class="mega-menu-title">About</div>
+                        <ul class="mega-menu-links">
+                            <li><a href="vision-mission.html">Vision & Mission</a></li>
+                            <li><a href="#">CI</a></li>
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="organization.html">Organization</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-link has-dropdown">
+                <a href="team.html">Team</a>
+                <div class="mega-menu-container">
+                    <div class="mega-menu-content">
+                        <div class="mega-menu-title">Team</div>
+                        <ul class="mega-menu-links">
+                            <li><a href="team.html">Team</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-link has-dropdown">
+                <a href="investment.html">Investment</a>
+                <div class="mega-menu-container">
+                    <div class="mega-menu-content">
+                        <div class="mega-menu-title">Investment</div>
+                        <ul class="mega-menu-links">
+                            <li><a href="investment.html">투자 현황</a></li>
+                            <li><a href="news.html">최신 소식</a></li>
+                            <li><a href="blog.html">블로그</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-link has-dropdown">
+                <a href="faq.html">FAQ</a>
+                <div class="mega-menu-container">
+                    <div class="mega-menu-content">
+                        <div class="mega-menu-title">FAQ</div>
+                        <ul class="mega-menu-links">
+                            <li><a href="faq.html">자주 묻는 질문</a></li>
+                            <li><a href="contact.html">문의하기</a></li>
+                            <li><a href="location.html">오시는 길</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </nav>
+
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Navigation Menu -->
+    <div class="nav-menu" id="navMenu">
+        <button class="nav-close-btn" aria-label="메뉴 닫기">&times;</button>
+        <!-- Scrollable Content -->
+        <div class="nav-menu-content">
+            <ul class="nav-links mobile-links">
+                <li class="nav-link">
+                    <a href="../index.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                        </svg>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="about.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="team.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                        Team
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="investment.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                        Investment
+                    </a>
+                </li>
+
+
+                <li class="nav-link">
+                    <a href="faq.html">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+                        </svg>
+                        FAQ
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- Navigation Footer -->
+        <div class="nav-footer">
+            <div class="nav-footer-text">
+                <div class="nav-footer-slogan">
+                    "Where Living Systems<br>meet Thinking Systems"
+                </div>
+                © 2025 Jiwell Farm Team
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main>
+    <!-- Page Hero Section -->
+    <section class="team-hero">
+        <div class="team-hero-background">
+            <div class="team-hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="team-hero-content">
+                <h1 class="team-hero-title">Organization</h1>
+                <p class="team-hero-subtitle">
+                    우리의 <span class="highlight">조직 문화</span>와 <span class="highlight">리더십</span>
+                </p>
+                <p class="team-hero-description">
+                    Jiwell Farm의 조직 구조와 핵심 가치
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Culture -->
+    <section class="team-culture section">
+        <div class="container">
+            <h2 class="section-title">Our Culture</h2>
+
+            <div class="culture-grid">
+                <div class="culture-item">
+                    <div class="culture-icon">🎯</div>
+                    <h3>목표 지향적</h3>
+                    <p>명확한 목표 설정과 체계적인 접근으로 프로젝트를 성공으로 이끕니다.</p>
+                </div>
+
+                <div class="culture-item">
+                    <div class="culture-icon">🔬</div>
+                    <h3>기술 중심적</h3>
+                    <p>최신 기술을 적극 도입하고 지속적인 학습을 통해 전문성을 키워갑니다.</p>
+                </div>
+
+                <div class="culture-item">
+                    <div class="culture-icon">🌐</div>
+                    <h3>오픈 소스</h3>
+                    <p>개방적 협력을 통해 더 나은 솔루션을 만들고 지식을 공유합니다.</p>
+                </div>
+
+                <div class="culture-item">
+                    <div class="culture-icon">♻️</div>
+                    <h3>지속가능성</h3>
+                    <p>환경을 생각하는 기술 개발로 미래 세대를 위한 가치를 창출합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Team -->
+    <section class="team-leadership section">
+        <div class="container">
+            <h2 class="section-title">Leadership Team</h2>
+
+            <div class="leadership-grid">
+                <!-- CEO -->
+                <div class="leader-card ceo">
+                    <div class="leader-avatar">유</div>
+                    <h3 class="leader-name">유동규</h3>
+                    <div class="leader-role">CEO & Founder</div>
+
+                    <div class="leader-specialization">
+                        <h4>전문 분야</h4>
+                        <p>프로젝트 관리 · 하드웨어 시스템 설계 · 사업 전략</p>
+                    </div>
+
+                    <div class="leader-responsibilities">
+                        <h4>주요 역할</h4>
+                        <ul>
+                            <li>전체 프로젝트 기획 및 일정 관리</li>
+                            <li>하드웨어 아키텍처 설계</li>
+                            <li>사업 전략 수립 및 기술 로드맵 관리</li>
+                            <li>투자 유치 및 파트너십 관리</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-stack">
+                        <div class="tech-tag">Project Management</div>
+                        <div class="tech-tag">Hardware Design</div>
+                        <div class="tech-tag">Business Development</div>
+                        <div class="tech-tag">Technology Strategy</div>
+                    </div>
+                </div>
+
+                <!-- CTO -->
+                <div class="leader-card cto">
+                    <div class="leader-avatar">황</div>
+                    <h3 class="leader-name">황선준</h3>
+                    <div class="leader-role">CTO</div>
+
+                    <div class="leader-specialization">
+                        <h4>전문 분야</h4>
+                        <p>인공지능 시스템 개발 · 자동화 알고리즘 설계</p>
+                    </div>
+
+                    <div class="leader-responsibilities">
+                        <h4>주요 역할</h4>
+                        <ul>
+                            <li>아쿠아포닉스 AI 제어 알고리즘 개발</li>
+                            <li>환경 데이터 분석을 통한 최적화 모델 구축</li>
+                            <li>자동화 프로그래밍을 통한 시스템 통합</li>
+                            <li>머신러닝 모델을 활용한 예측 및 최적화</li>
+                            <li>웹사이트 구축</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-stack">
+                        <div class="tech-tag">Python</div>
+                        <div class="tech-tag">TensorFlow</div>
+                        <div class="tech-tag">PyTorch</div>
+                        <div class="tech-tag">Automation</div>
+                        <div class="tech-tag">Data Analysis</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Team -->
+    <section class="core-team section">
+        <div class="container">
+            <h2 class="section-title">Core Team Members</h2>
+
+            <div class="team-grid">
+                <!-- Communications Lead -->
+                <div class="member-card communications">
+                    <div class="member-avatar">박</div>
+                    <div class="member-info">
+                        <h3 class="member-name">박세희</h3>
+                        <div class="member-role">Communications Lead</div>
+                        <div class="member-specialization">
+                            통신 프로그래밍 · 네트워크 시스템 설계
+                        </div>
+                    </div>
+
+                    <div class="member-details">
+                        <div class="member-responsibilities">
+                            <h4>주요 역할</h4>
+                            <ul>
+                                <li>IoT 센서와 제어 시스템 간 무선 통신 프로토콜 개발</li>
+                                <li>실시간 데이터 전송 및 원격 모니터링 시스템 구축</li>
+                                <li>클라우드 연동 및 모바일 앱 통신 인터페이스 개발</li>
+                                <li>네트워크 보안 및 안정성을 위한 통신 아키텍처 설계</li>
+                            </ul>
+                        </div>
+
+                        <div class="member-tech-stack">
+                            <div class="tech-tag">C/C++</div>
+                            <div class="tech-tag">Python</div>
+                            <div class="tech-tag">MQTT</div>
+                            <div class="tech-tag">LoRaWAN</div>
+                            <div class="tech-tag">WiFi/Bluetooth</div>
+                            <div class="tech-tag">REST API</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Engineering Lead -->
+                <div class="member-card data">
+                    <div class="member-avatar">김</div>
+                    <div class="member-info">
+                        <h3 class="member-name">김수찬</h3>
+                        <div class="member-role">Data Engineering Lead</div>
+                        <div class="member-specialization">
+                            데이터 수집 및 전처리 · 데이터 엔지니어링
+                        </div>
+                    </div>
+
+                    <div class="member-details">
+                        <div class="member-responsibilities">
+                            <h4>주요 역할</h4>
+                            <ul>
+                                <li>아쿠아포닉스 시스템 내 다양한 센서 데이터 수집 시스템 구축</li>
+                                <li>수질, 온도, pH, 영양분 등 핵심 지표 데이터 전처리</li>
+                                <li>데이터 파이프라인 설계 및 실시간 모니터링 시스템 구축</li>
+                                <li>데이터 품질 관리 및 이상 탐지 알고리즘 개발</li>
+                            </ul>
+                        </div>
+
+                        <div class="member-tech-stack">
+                            <div class="tech-tag">Python</div>
+                            <div class="tech-tag">SQL</div>
+                            <div class="tech-tag">Apache Kafka</div>
+                            <div class="tech-tag">ETL Tools</div>
+                            <div class="tech-tag">Data Visualization</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hardware Engineering Lead -->
+                <div class="member-card hardware">
+                    <div class="member-avatar">김</div>
+                    <div class="member-info">
+                        <h3 class="member-name">김선욱</h3>
+                        <div class="member-role">Hardware Engineering Lead</div>
+                        <div class="member-specialization">
+                            하드웨어 프로그래밍 · 임베디드 시스템 개발
+                        </div>
+                    </div>
+
+                    <div class="member-details">
+                        <div class="member-responsibilities">
+                            <h4>주요 역할</h4>
+                            <ul>
+                                <li>아쿠아포닉스 시스템용 센서 모듈 및 제어 장치 개발</li>
+                                <li>임베디드 시스템 프로그래밍 및 펌웨어 개발</li>
+                                <li>펌프, 에어레이터, 조명 등 하드웨어 제어 시스템 구현</li>
+                                <li>하드웨어 최적화 및 전력 관리 시스템 개발</li>
+                            </ul>
+                        </div>
+
+                        <div class="member-tech-stack">
+                            <div class="tech-tag">C/C++</div>
+                            <div class="tech-tag">Arduino</div>
+                            <div class="tech-tag">Raspberry Pi</div>
+                            <div class="tech-tag">Microcontrollers</div>
+                            <div class="tech-tag">Sensor Interfaces</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Jiwell Farm</h3>
+                <p>Where Living Systems <br> meet Thinking Systems</p>
+                <div class="footer-info" style="margin-top: 1rem; font-size: 0.875rem; color: #94a3b8; line-height: 1.6;">
+                    Jiwell Farm CEO. 유동규<br>
+                    E-mail: 유동규메일<br>
+                    Address: 강원특별자치도 원주시 흥업면 연세대길 1 (매지리 1496) <br> 연세대학교 미래캠퍼스 창업보육센터3 307호<br><br>
+                    &copy; 2025 Jiwell Farm Team. All rights reserved.
+                </div>
+            </div>
+            <div class="footer-links-container">
+                <div class="footer-main-link">
+                    <a href="../index.html">Home</a>
+                </div>
+                <div class="footer-main-link">
+                    <a href="about.html">About</a>
+                    <div class="footer-sub-links">
+                        <a href="vision-mission.html">Vision & Mission</a>
+                        <a href="#">CI</a>
+                        <a href="history.html">History</a>
+                        <a href="organization.html">Organization</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-main-link">
+                    <a href="team.html">Team</a>
+                     <div class="footer-sub-links">
+                        <a href="team.html">Team</a>
+                    </div>
+                </div>
+                <div class="footer-main-link">
+                    <a href="investment.html">Investment</a>
+                    <div class="footer-sub-links">
+                        <a href="investment.html">투자 현황</a>
+                        <a href="news.html">최신 소식</a>
+                        <a href="blog.html">블로그</a>
+                    </div>
+                </div>
+                <div class="footer-main-link">
+                    <a href="faq.html">FAQ</a>
+                    <div class="footer-sub-links">
+                        <a href="faq.html">자주 묻는 질문</a>
+                        <a href="contact.html">문의하기</a>
+                        <a href="location.html">오시는 길</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript Files -->
+<script src="../js/navigation.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/scroll-to-top.js"></script>
+</body>
+</html>
