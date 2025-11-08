@@ -1,8 +1,12 @@
 /* FAQ Hero Section */
 .faq-hero {
-    padding: 6rem 0 4rem;
+    padding: 2rem 0 0 0;
+    min-height: 400px;
     background: linear-gradient(135deg, #2c7a2c 0%, #3b82f6 50%, #1e3a8a 100%);
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .faq-hero h1 {

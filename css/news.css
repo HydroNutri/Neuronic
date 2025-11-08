@@ -3,7 +3,11 @@
     background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
     color: white;
     text-align: center;
-    padding: var(--spacing-4xl) 0;
+    padding: 2rem 0 0 0;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .news-hero h1 {

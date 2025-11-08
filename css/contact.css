@@ -1,10 +1,14 @@
 /* Contact Hero */
 .contact-hero {
     position: relative;
-    padding: var(--spacing-4xl) 0;
+    padding: 2rem 0 0 0;
+    min-height: 400px;
     background: linear-gradient(135deg, #2c7a2c, #1e3a8a);
     color: white;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .contact-hero h1 {
     font-size: var(--fs-5xl);
