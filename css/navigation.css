@@ -52,6 +52,7 @@
 }
 
 .logo-text {
+    font-family: 'Montserrat', sans-serif;
     margin-left: var(--spacing-sm);
     background: linear-gradient(to right, #ADFF2F, #008000, #87CEEB, #0000FF);
     -webkit-background-clip: text;
@@ -432,13 +433,13 @@
 /* Media queries for the width of the pseudo-element */
 @media (min-width: 1200px) {
     .mega-menu-container::before {
-        width: calc((100vw - 1200px) / 2 + 190px + 2rem);
+        width: calc((100vw - 1200px) / 2 + 250px + 2rem);
     }
 }
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
     .mega-menu-container::before {
-        width: calc(190px + 2rem);
+        width: calc(250px + 2rem);
     }
 }
 
@@ -470,7 +471,7 @@
     padding: 0;
     margin: 0;
     gap: 3rem;
-    margin-left: 8rem; /* Adjusted margin */
+    margin-left: 12rem; /* Adjusted margin */
 }
 
 .mega-menu-links li a {
