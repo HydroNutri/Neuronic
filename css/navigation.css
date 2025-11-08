@@ -42,6 +42,15 @@
     color: var(--secondary-green);
 }
 
+.logo-img {
+    height: 65px;
+    width: auto;
+    margin-right: var(--spacing-sm);
+    background-color: white;
+    border-radius: 4px;
+    padding: 4px;
+}
+
 .logo-text {
     margin-left: var(--spacing-sm);
     background: linear-gradient(to right, #ADFF2F, #008000, #87CEEB, #0000FF);
@@ -423,13 +432,13 @@
 /* Media queries for the width of the pseudo-element */
 @media (min-width: 1200px) {
     .mega-menu-container::before {
-        width: calc((100vw - 1200px) / 2 + 150px + 2rem);
+        width: calc((100vw - 1200px) / 2 + 190px + 2rem);
     }
 }
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
     .mega-menu-container::before {
-        width: calc(150px + 2rem);
+        width: calc(190px + 2rem);
     }
 }
 
