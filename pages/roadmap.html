@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jiwell Farm FAQ - 아쿠아포닉스 스마트팜에 대한 자주 묻는 질문과 답변">
-    <title>FAQ - Jiwell Farm</title>
+    <meta name="description" content="Jiwell Farm Technology Roadmap - 기술 개발 로드맵">
+    <title>Technology Roadmap - Jiwell Farm</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,9 +13,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/navigation.css">
-    <link rel="stylesheet" href="../css/faq.css">
-    <link rel="stylesheet" href="../css/contact.css">
-    <link rel="stylesheet" href="../css/location.css">
+    <link rel="stylesheet" href="../css/technology.css">
     <link rel="stylesheet" href="../css/scroll-to-top.css">
 </head>
 <body>
@@ -26,7 +24,7 @@
         <a href="../index.html" class="logo">
                 <span class="logo-text">
                     Jiwell Farm
-                   <!-- <span class="logo-subtitle">Living × Thinking Systems</span> -->
+                  <!--  <span class="logo-subtitle">Living × Thinking Systems</span> -->
                 </span>
         </a>
 
@@ -42,6 +40,7 @@
                             <li><a href="ci.html">CI</a></li>
                             <li><a href="history.html">History</a></li>
                             <li><a href="organization.html">Organization</a></li>
+
                         </ul>
                     </div>
                 </div>
@@ -124,7 +123,7 @@
                         <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
                         </svg>
-                        Team
+                        Technology
                     </a>
                 </li>
                 <li class="nav-link">
@@ -161,68 +160,75 @@
     </div>
 </header>
 
+<!-- Main Content -->
 <main>
-    <!-- Hero Section -->
-    <section class="faq-hero section">
-        <div class="container text-center">
-            <h1 class="fade-in-scroll">자주 묻는 질문</h1>
-            <p class="fade-in-scroll">Jiwell Farm 스마트팜 솔루션에 대한 궁금증을 확인해보세요</p>
-        </div>
-    </section>
-
-    <!-- Search Bar -->
-    <section class="faq-search section-sm">
+    <!-- Future Technology Roadmap -->
+    <section class="future-tech section">
         <div class="container">
-            <div class="search-container">
-                <span class="search-icon">🔍</span>
-                <input type="text" id="faqSearch" class="search-input" placeholder="궁금한 내용을 입력하세요...">
-            </div>
-        </div>
-    </section>
+            <h2 class="section-title">기술 로드맵</h2>
 
-    <!-- Category Tabs -->
-    <section class="faq-categories section-sm">
-        <div class="container">
-            <div class="category-tabs">
-                <button class="category-tab active" data-category="all">전체</button>
-                <button class="category-tab" data-category="general">일반</button>
-                <button class="category-tab" data-category="technical">기술</button>
-                <button class="category-tab" data-category="business">비즈니스</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Items -->
-    <section class="faq-content section">
-        <div class="container">
-            <div class="faq-list">
-                <div class="faq-item fade-in-scroll" data-category="general">
-                    <div class="faq-question">
-                        <span>아쿠아포닉스가 무엇인가요?</span>
-                        <span class="faq-toggle">▼</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>수경재배와 어류 양식을 결합한 지속 가능한 농업 시스템입니다.</p>
+            <div class="roadmap-timeline">
+                <!-- Phase 1: Current -->
+                <div class="roadmap-item current">
+                    <div class="roadmap-date">2025 Q1-Q2</div>
+                    <div class="roadmap-content">
+                        <h3>🚀 MVP 개발 완료</h3>
+                        <p>기본 아쿠아포닉스 시스템과 센서 모니터링 기능 구현</p>
+                        <div class="roadmap-techs">
+                            <div class="tech-tag completed">YOLOv8</div>
+                            <div class="tech-tag completed">Raspberry Pi</div>
+                            <div class="tech-tag progress">React Dashboard</div>
+                            <div class="tech-tag progress">MQTT</div>
+                            <div class="tech-tag progress">Basic Sensors</div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="faq-item fade-in-scroll" data-category="technical">
-                    <div class="faq-question">
-                        <span>AI는 어떤 역할을 하나요?</span>
-                        <span class="faq-toggle">▼</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>환경 데이터를 분석하고 최적의 제어 명령을 자동으로 생성합니다.</p>
+                <!-- Phase 2: Near Future -->
+                <div class="roadmap-item upcoming">
+                    <div class="roadmap-date">2025 Q3-Q4</div>
+                    <div class="roadmap-content">
+                        <h3>🧠 AI 고도화</h3>
+                        <p>머신러닝 모델 고도화 및 예측 시스템 구축</p>
+                        <div class="roadmap-techs">
+                            <div class="tech-tag planned">Transformer Models</div>
+                            <div class="tech-tag planned">Edge AI</div>
+                            <div class="tech-tag planned">Reinforcement Learning</div>
+                            <div class="tech-tag planned">Computer Vision++</div>
+                            <div class="tech-tag planned">Mobile App</div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="faq-item fade-in-scroll" data-category="business">
-                    <div class="faq-question">
-                        <span>투자 유치 현황은 어떤가요?</span>
-                        <span class="faq-toggle">▼</span>
+                <!-- Phase 3: Future -->
+                <div class="roadmap-item future">
+                    <div class="roadmap-date">2026 Q1-Q2</div>
+                    <div class="roadmap-content">
+                        <h3>🌐 확장 & 최적화</h3>
+                        <p>다중 시스템 관리 및 클라우드 확장성 구현</p>
+                        <div class="roadmap-techs">
+                            <div class="tech-tag planned">Kubernetes</div>
+                            <div class="tech-tag planned">Microservices</div>
+                            <div class="tech-tag planned">5G Integration</div>
+                            <div class="tech-tag planned">Blockchain IoT</div>
+                            <div class="tech-tag planned">AR/VR Interface</div>
+                        </div>
                     </div>
-                    <div class="faq-answer">
-                        <p>현재 시드 투자를 유치 중이며, 스마트팜 관련 VC와 협업 중입니다.</p>
+                </div>
+
+                <!-- Phase 4: Vision -->
+                <div class="roadmap-item visionary">
+                    <div class="roadmap-date">2026 Q3+</div>
+                    <div class="roadmap-content">
+                        <h3>🔮 차세대 기술</h3>
+                        <p>양자 컴퓨팅과 신경망 기술을 활용한 혁신적 시스템</p>
+                        <div class="roadmap-techs">
+                            <div class="tech-tag visionary">Quantum ML</div>
+                            <div class="tech-tag visionary">Neural Networks</div>
+                            <div class="tech-tag visionary">Digital Twin</div>
+                            <div class="tech-tag visionary">Autonomous Robots</div>
+                            <div class="tech-tag visionary">6G IoT</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -251,16 +257,17 @@
                 <div class="footer-main-link">
                     <a href="vision-mission.html">About</a>
                     <div class="footer-sub-links">
-                        <a href="#">Vision & Mission</a>
+                        <a href="vision-mission.html">Vision & Mission</a>
                         <a href="ci.html">CI</a>
-                        <a href="#">History</a>
-                        <a href="#">Organization</a>
+                        <a href="history.html">History</a>
+                        <a href="organization.html">Organization</a>
                     </div>
                 </div>
                 <div class="footer-main-link">
                     <a href="team.html">Technology</a>
                      <div class="footer-sub-links">
                         <a href="team.html">Technology</a>
+                        <a href="roadmap.html">Roadmap</a>
                     </div>
                 </div>
                 <div class="footer-main-link">
@@ -284,9 +291,9 @@
     </div>
 </footer>
 
-<!-- Scripts -->
+<!-- JavaScript Files -->
 <script src="../js/navigation.js"></script>
-<script src="../js/faq.js"></script>
+<script src="../js/main.js"></script>
 <script src="../js/scroll-to-top.js"></script>
 </body>
 </html>
