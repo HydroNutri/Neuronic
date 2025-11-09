@@ -20,7 +20,36 @@ class Navigation {
         this.bindEvents();
         this.bindDropdownEvents();
         this.handleScrollEffect();
+        this.bindSubmenuEvents();
     }
+
+    bindSubmenuEvents() {
+        const submenuToggles = document.querySelectorAll('.submenu-toggle');
+        submenuToggles.forEach(toggle => {
+            toggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                const submenu = toggle.closest('.nav-link.has-submenu').querySelector('.submenu');
+
+                if (submenu.classList.contains('active')) {
+                    submenu.classList.remove('active');
+                    toggle.textContent = '+';
+                    submenu.style.maxHeight = '0';
+                } else {
+                    // Close other open submenus
+                    document.querySelectorAll('.submenu.active').forEach(activeSubmenu => {
+                        activeSubmenu.classList.remove('active');
+                        activeSubmenu.closest('.nav-link.has-submenu').querySelector('.submenu-toggle').textContent = '+';
+                        activeSubmenu.style.maxHeight = '0';
+                    });
+
+                    submenu.classList.add('active');
+                    toggle.textContent = '-';
+                    submenu.style.maxHeight = submenu.scrollHeight + 'px';
+                }
+            });
+        });
+    }
+
 
     bindDropdownEvents() {
         this.desktopDropdowns.forEach(dropdown => {
@@ -112,7 +141,7 @@ class Navigation {
 
     openMenu() {
         this.isMenuOpen = true;
-        this.hamburger.classList.add('active');
+        this.hamburger.style.display = 'none';
         this.navMenu.classList.add('active');
         this.navOverlay.classList.add('active');
 
@@ -131,7 +160,7 @@ class Navigation {
 
     closeMenu() {
         this.isMenuOpen = false;
-        this.hamburger.classList.remove('active');
+        this.hamburger.style.display = 'block';
         this.navMenu.classList.remove('active');
         this.navOverlay.classList.remove('active');
 

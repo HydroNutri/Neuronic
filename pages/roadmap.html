@@ -107,47 +107,82 @@
         <div class="nav-menu-content">
             <ul class="nav-links mobile-links">
                 <li class="nav-link">
-                    <a href="../index.html">
-                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
-                        </svg>
-                        Home
-                    </a>
+                    <div class="nav-link-header">
+                        <a href="../index.html">
+                            <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                            </svg>
+                            Home
+                        </a>
+                        <span class="submenu-placeholder"></span>
+                    </div>
                 </li>
-                <li class="nav-link">
-                    <a href="vision-mission.html">
-                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                        </svg>
-                        About
-                    </a>
-                </li>
-
-                <li class="nav-link">
-                    <a href="technology.html">
-                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
-                        </svg>
-                        Technology
-                    </a>
-                </li>
-                <li class="nav-link">
-                    <a href="investment.html">
-                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-                        </svg>
-                        Investment
-                    </a>
+                <li class="nav-link has-submenu">
+                    <div class="nav-link-header">
+                        <a href="vision-mission.html">
+                            <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            About
+                        </a>
+                        <button class="submenu-toggle">+</button>
+                    </div>
+                    <ul class="submenu">
+                        <li><a href="vision-mission.html">Vision & Mission</a></li>
+                        <li><a href="ci.html">CI</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="organization.html">Organization</a></li>
+                    </ul>
                 </li>
 
+                <li class="nav-link has-submenu">
+                    <div class="nav-link-header">
+                        <a href="technology.html">
+                            <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                            </svg>
+                            Technology
+                        </a>
+                        <button class="submenu-toggle">+</button>
+                    </div>
+                    <ul class="submenu">
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="roadmap.html">Roadmap</a></li>
+                    </ul>
+                </li>
+                <li class="nav-link has-submenu">
+                    <div class="nav-link-header">
+                        <a href="investment.html">
+                            <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            </svg>
+                            Investment
+                        </a>
+                        <button class="submenu-toggle">+</button>
+                    </div>
+                    <ul class="submenu">
+                        <li><a href="investment.html">투자 현황</a></li>
+                        <li><a href="news.html">최신 소식</a></li>
+                        <li><a href="blog.html">블로그</a></li>
+                    </ul>
+                </li>
 
-                <li class="nav-link">
-                    <a href="faq.html">
-                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
-                        </svg>
-                        FAQ
-                    </a>
+
+                <li class="nav-link has-submenu">
+                    <div class="nav-link-header">
+                        <a href="faq.html">
+                            <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+                            </svg>
+                            FAQ
+                        </a>
+                        <button class="submenu-toggle">+</button>
+                    </div>
+                    <ul class="submenu">
+                        <li><a href="faq.html">자주 묻는 질문</a></li>
+                        <li><a href="contact.html">문의하기</a></li>
+                        <li><a href="location.html">오시는 길</a></li>
+                    </ul>
                 </li>
 
             </ul>
@@ -157,7 +192,7 @@
         <div class="nav-footer">
             <div class="nav-footer-text">
                 <div class="nav-footer-slogan">
-                    "Where Living Systems<br>meet Thinking Systems"
+                    "Where Living Systems meet Thinking Systems"
                 </div>
                 © 2025 Jiwell Farm Team
             </div>
