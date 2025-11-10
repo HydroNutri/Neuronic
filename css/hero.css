@@ -581,7 +581,11 @@
 /* Responsive Design for Sub-pages */
 @media (max-width: 768px) {
     .hero-section {
-        height: 400px;
+        height: 450px;
+    }
+
+    .hero-overlay {
+        padding-bottom: 80px;
     }
 
     .hero-title {
@@ -612,7 +616,11 @@
 
 @media (max-width: 480px) {
     .hero-section {
-        height: 350px;
+        height: 400px;
+    }
+
+    .hero-overlay {
+        padding-bottom: 140px;
     }
 
     .hero-title {
@@ -622,6 +630,7 @@
     .breadcrumb {
         font-size: 0.875rem;
         flex-wrap: wrap;
+        gap: 0.5rem;
     }
 
     .sub-nav-menu a {
