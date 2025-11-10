@@ -1665,6 +1665,14 @@
     .ui-platforms {
         grid-template-columns: 1fr;
     }
+
+    .data-tech-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .protocol-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
 }
 
 @media (max-width: 768px) {
@@ -1713,6 +1721,30 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .components-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sensor-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .protocol-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .overview-content {
+        flex-direction: column;
+    }
+
+    .code-snippet {
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1722,6 +1754,10 @@
 
     .tech-hero-description {
         font-size: var(--fs-base);
+    }
+
+    .section-title {
+        font-size: var(--fs-2xl);
     }
 
     .metrics-grid-large {
@@ -1741,6 +1777,47 @@
     .tech-cta .cta-buttons .btn {
         width: 100%;
         max-width: 300px;
+    }
+
+    .sensor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ui-tech-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hardware-specs {
+        grid-template-columns: 1fr;
+    }
+
+    .layer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .code-snippet {
+        font-size: 12px;
+    }
+
+    .code-snippet pre {
+        padding: var(--spacing-md);
+    }
+
+    .tech-badge {
+        font-size: var(--fs-xs);
+        padding: var(--spacing-xs) var(--spacing-md);
+    }
+
+    .feature-item {
+        padding: var(--spacing-lg);
+    }
+
+    .component-card {
+        padding: var(--spacing-lg);
+    }
+
+    .roadmap-item {
+        padding: var(--spacing-lg);
     }
 }
 
