@@ -891,8 +891,8 @@
 
 .team-connector-horizontal {
     position: absolute;
-    left: 25%;
-    right: 25%;
+    left: 22%;
+    right: 22%;
     top: 0;
     height: 3px;
     background: linear-gradient(to right, #9ccc65, #7cb342, #9ccc65);
@@ -901,7 +901,7 @@
 
 .team-connector-left {
     position: absolute;
-    left: calc(25% - 1.5px);
+    left: calc(22% - 1.5px);
     top: 0;
     width: 3px;
     height: 30px;
@@ -911,7 +911,7 @@
 
 .team-connector-right {
     position: absolute;
-    right: calc(25% - 1.5px);
+    right: calc(22% - 1.5px);
     top: 0;
     width: 3px;
     height: 30px;
@@ -922,9 +922,10 @@
 /* 3단계: 팀 박스 그룹 */
 .level-3 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
     width: 100%;
-    gap: var(--spacing-lg);
+    gap: 8%;
 }
 
 /* 3단계 팀 박스 */
@@ -934,10 +935,10 @@
     border: 2px solid #e0e0e0;
     font-size: var(--fs-sm);
     font-weight: 500;
-    flex: 1;
-    padding: var(--spacing-md);
+    flex: 0 0 auto;
+    padding: var(--spacing-lg) var(--spacing-xl);
     line-height: 1.6;
-    min-width: 150px;
+    width: 160px;
 }
 
 .team-box strong {
@@ -995,7 +996,9 @@
     }
 
     .team-box {
+        width: auto;
         min-width: 140px;
+        flex: 1;
     }
 
     .ceo-box {
@@ -1036,7 +1039,6 @@
     .team-box {
         width: 100%;
         max-width: 300px;
-        min-width: auto;
         margin-bottom: var(--spacing-md);
     }
 
