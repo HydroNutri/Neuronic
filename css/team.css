@@ -729,3 +729,323 @@
         transform: translateY(0);
     }
 }
+
+/* Organization Chart */
+.organization-chart-section {
+    background: var(--bg-light);
+}
+
+.organization-chart {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--spacing-4xl) var(--spacing-xl);
+    background-color: #ffffff;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-medium);
+    text-align: center;
+}
+
+/* 박스 공통 스타일 */
+.org-box {
+    padding: var(--spacing-lg) var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    font-weight: 600;
+    display: inline-block;
+    min-width: 180px;
+    box-sizing: border-box;
+    margin: var(--spacing-md);
+    text-align: center;
+    transition: all var(--transition-normal);
+}
+
+.org-box:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-medium);
+}
+
+/* CEO 박스 */
+.ceo-box {
+    background: var(--primary-gradient);
+    color: white;
+    font-size: var(--fs-lg);
+    line-height: 1.5;
+    padding: var(--spacing-xl) var(--spacing-2xl);
+    position: relative;
+    z-index: 10;
+    box-shadow: var(--shadow-green);
+}
+
+.ceo-box strong {
+    font-weight: 800;
+    display: block;
+    margin-top: var(--spacing-sm);
+    font-size: var(--fs-xl);
+}
+
+/* CEO 아래 연결선 */
+.level-1-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.ceo-line-down {
+    height: 40px;
+    width: 3px;
+    background: linear-gradient(to bottom, var(--primary-green), var(--secondary-green));
+    position: relative;
+    z-index: 1;
+}
+
+/* 부서들을 연결하는 수평 커넥터 */
+.departments-connector {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.connector-horizontal {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 0;
+    height: 3px;
+    background: linear-gradient(to right, #9ccc65, #7cb342, #9ccc65);
+    z-index: 1;
+}
+
+.connector-left-branch {
+    position: absolute;
+    left: calc(25% - 1.5px);
+    top: 0;
+    width: 3px;
+    height: 40px;
+    background: linear-gradient(to bottom, #7cb342, #9ccc65);
+    z-index: 1;
+}
+
+.connector-right-branch {
+    position: absolute;
+    right: calc(25% - 1.5px);
+    top: 0;
+    width: 3px;
+    height: 40px;
+    background: linear-gradient(to bottom, #7cb342, #9ccc65);
+    z-index: 1;
+}
+
+/* 2단계: R&D / Management Department */
+.department-box {
+    background-color: #ffffff;
+    color: var(--primary-green);
+    font-size: var(--fs-lg);
+    border: 3px solid #7cb342;
+    position: relative;
+    z-index: 10;
+    font-weight: 700;
+}
+
+/* 2단계 부서 그룹 */
+.level-2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    gap: var(--spacing-4xl);
+    padding: 0 var(--spacing-xl);
+}
+
+/* R&D/Management 부서별 브랜치 */
+.department-branch {
+    position: relative;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 부서에서 아래로 내려가는 선 */
+.dept-line-down {
+    height: 40px;
+    width: 3px;
+    background: linear-gradient(to bottom, #7cb342, #9ccc65);
+    position: relative;
+    z-index: 1;
+    margin-top: var(--spacing-md);
+}
+
+/* 팀들을 연결하는 커넥터 */
+.teams-connector {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: var(--spacing-md);
+}
+
+.team-connector-horizontal {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 0;
+    height: 3px;
+    background: linear-gradient(to right, #9ccc65, #7cb342, #9ccc65);
+    z-index: 1;
+}
+
+.team-connector-left {
+    position: absolute;
+    left: calc(25% - 1.5px);
+    top: 0;
+    width: 3px;
+    height: 30px;
+    background: linear-gradient(to bottom, #9ccc65, #aed581);
+    z-index: 1;
+}
+
+.team-connector-right {
+    position: absolute;
+    right: calc(25% - 1.5px);
+    top: 0;
+    width: 3px;
+    height: 30px;
+    background: linear-gradient(to bottom, #9ccc65, #aed581);
+    z-index: 1;
+}
+
+/* 3단계: 팀 박스 그룹 */
+.level-3 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: var(--spacing-lg);
+}
+
+/* 3단계 팀 박스 */
+.team-box {
+    background-color: #ffffff;
+    color: var(--text-primary);
+    border: 2px solid #e0e0e0;
+    font-size: var(--fs-sm);
+    font-weight: 500;
+    flex: 1;
+    padding: var(--spacing-md);
+    line-height: 1.6;
+    min-width: 150px;
+}
+
+.team-box strong {
+    color: var(--primary-green);
+    display: block;
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+}
+
+.team-box span {
+    color: var(--text-secondary);
+    font-size: var(--fs-xs);
+    font-weight: 400;
+}
+
+/* Responsive Design for Organization Chart */
+@media (max-width: 768px) {
+    .organization-chart {
+        padding: var(--spacing-2xl) var(--spacing-md);
+    }
+
+    .departments-connector {
+        width: 3px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .connector-horizontal {
+        display: none;
+    }
+
+    .connector-left-branch,
+    .connector-right-branch {
+        width: 3px;
+        height: 40px;
+        margin: 0 auto;
+    }
+
+    .level-2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .department-branch {
+        width: 100%;
+        max-width: 450px;
+        margin-bottom: var(--spacing-3xl);
+    }
+
+    .org-box {
+        min-width: 140px;
+        font-size: var(--fs-sm);
+        padding: var(--spacing-md) var(--spacing-lg);
+    }
+
+    .team-box {
+        min-width: 140px;
+    }
+
+    .ceo-box {
+        font-size: var(--fs-base);
+        padding: var(--spacing-lg) var(--spacing-xl);
+    }
+
+    .department-box {
+        font-size: var(--fs-base);
+    }
+}
+
+@media (max-width: 480px) {
+    .level-3 {
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    .teams-connector {
+        width: 3px;
+        flex-direction: column;
+        margin: 0 auto var(--spacing-md);
+    }
+
+    .team-connector-horizontal {
+        display: none;
+    }
+
+    .team-connector-left,
+    .team-connector-right {
+        width: 3px;
+        height: 30px;
+        margin: 0 auto;
+    }
+
+    .team-box {
+        width: 100%;
+        max-width: 300px;
+        min-width: auto;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .org-box {
+        min-width: 140px;
+        margin: var(--spacing-sm) auto;
+    }
+
+    .department-branch {
+        max-width: 350px;
+    }
+}
