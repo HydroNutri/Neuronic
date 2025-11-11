@@ -605,16 +605,6 @@
         grid-template-columns: 1fr;
     }
 
-    .footer-content {
-        flex-direction: column;
-        gap: var(--spacing-xl);
-        text-align: center;
-    }
-
-    .footer-links {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 }
 
 @media (max-width: 480px) {

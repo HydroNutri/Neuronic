@@ -234,15 +234,35 @@ a:hover {
     .footer-content {
         flex-direction: column;
         gap: var(--spacing-2xl);
+        text-align: center;
+    }
+
+    .footer-brand {
+        text-align: center;
+    }
+
+    .footer-links-container {
+        align-items: center;
     }
 
     .footer-main-link {
         flex-direction: column;
         gap: var(--spacing-md);
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-main-link > a {
+        text-align: center;
+    }
+
+    .footer-sub-links {
+        justify-content: center;
     }
 
     .footer-info {
         word-break: break-all;
+        text-align: center;
     }
 }
 
