@@ -1,0 +1,35 @@
+# IDE and editor files
+.idea/
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.claude/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# Build output
+dist/
+build/
+out/
+
+# Other
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
