@@ -1,0 +1,62 @@
+/* Location Page Styles */
+
+.location-map-section {
+    padding: var(--spacing-4xl) 0;
+    background: var(--bg-light);
+}
+
+.map-wrapper {
+    width: 100%;
+    height: 450px;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-medium);
+    margin-bottom: var(--spacing-3xl);
+    overflow: hidden;
+    background: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.location-info {
+    background: white;
+    padding: var(--spacing-3xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-medium);
+}
+
+.location-info h2 {
+    font-size: var(--fs-2xl);
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-lg);
+}
+
+.location-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.location-info ul li {
+    font-size: var(--fs-base);
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.7;
+}
+
+.location-info ul li strong {
+    color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+    .map-wrapper {
+        height: 300px;
+    }
+}
