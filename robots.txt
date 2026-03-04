@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jiwellfarm.com/sitemap.xml
+Sitemap: https://corexbiotech.com/sitemap.xml
