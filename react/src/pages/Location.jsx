@@ -36,7 +36,7 @@ export default function Location() {
               <li>
                 <strong>주소:</strong> 강원특별자치도 춘천시 동산면 종자리로 33-7
               </li>
-              <li><strong>이메일:</strong> eqjsro@gmail.com</li>
+              <li><strong>이메일:</strong> 22qjsro@corexbiotech.com</li>
             </ul>
           </div>
         </div>

@@ -16,33 +16,41 @@ const categoryOptions = [
   { value: 'support', label: '기술 지원' },
 ];
 
-const infoCards = [
-  {
-    icon: '📍',
-    title: '오피스 위치',
-    content: (
-      <p>강원특별자치도 춘천시 동산면 종자리로 33-7</p>
-    ),
-  },
-  {
-    icon: '📧',
-    title: '이메일 문의',
-    content: (
-      <p><a href="mailto:eqjsro@gmail.com">eqjsro@gmail.com</a></p>
-    ),
-  },
-  {
-    icon: '🔗',
-    title: 'SNS',
-    content: (
-      <div className="social-links">
-        <a href="#" className="social-link">💼</a>
-        <a href="#" className="social-link">🐦</a>
-        <a href="#" className="social-link">📷</a>
-      </div>
-    ),
-  },
-];
+const IconLocation = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M21 10c0 6-9 13-9 13S3 16 3 10a9 9 0 0 1 18 0z"/>
+    <circle cx="12" cy="10" r="3"/>
+  </svg>
+);
+
+const IconMail = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="2" y="4" width="20" height="16" rx="2"/>
+    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+  </svg>
+);
+
+const IconLinkedIn = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+    <rect x="2" y="9" width="4" height="12"/>
+    <circle cx="4" cy="4" r="2"/>
+  </svg>
+);
+
+const IconX = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M18 6 6 18M6 6l12 12"/>
+  </svg>
+);
+
+const IconInstagram = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+    <circle cx="12" cy="12" r="4"/>
+    <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+  </svg>
+);
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -152,20 +160,45 @@ export default function Contact() {
               </div>
 
               <button type="submit" className="submit-btn" disabled={sending}>
-                {sending ? '전송 중...' : '보내기 ✉️'}
+                {sending ? '전송 중...' : '보내기'}
               </button>
             </form>
           </div>
 
           {/* Info */}
           <div className="contact-info">
-            {infoCards.map((card, i) => (
-              <div key={i} className="info-card">
-                <div className="info-icon">{card.icon}</div>
-                <h3>{card.title}</h3>
-                {card.content}
+            <div className="info-block">
+              <div className="info-row">
+                <span className="info-row-icon"><IconLocation /></span>
+                <div>
+                  <span className="info-label">위치</span>
+                  <p>강원특별자치도 춘천시<br />동산면 종자리로 33-7</p>
+                </div>
               </div>
-            ))}
+              <div className="info-row">
+                <span className="info-row-icon"><IconMail /></span>
+                <div>
+                  <span className="info-label">이메일</span>
+                  <p><a href="mailto:22qjsro@corexbiotech.com">22qjsro@corexbiotech.com</a></p>
+                </div>
+              </div>
+              <div className="info-row info-row--social">
+                <div className="social-links">
+                  <a href="#" className="social-link" aria-label="LinkedIn">
+                    <IconLinkedIn />
+                    <span>LinkedIn</span>
+                  </a>
+                  <a href="#" className="social-link" aria-label="X">
+                    <IconX />
+                    <span>X (Twitter)</span>
+                  </a>
+                  <a href="#" className="social-link" aria-label="Instagram">
+                    <IconInstagram />
+                    <span>Instagram</span>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

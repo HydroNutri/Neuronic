@@ -36,13 +36,6 @@ export default function Home() {
           <div className="particle"></div>
         </div>
 
-        <div className="hero-tech-icons">
-          <div className="tech-icon">🌿</div>
-          <div className="tech-icon">⚗️</div>
-          <div className="tech-icon">🧬</div>
-          <div className="tech-icon">💎</div>
-        </div>
-
         <div className="hero-content">
           <h1 className="hero-brand">COREX</h1>
           <p className="hero-slogan">

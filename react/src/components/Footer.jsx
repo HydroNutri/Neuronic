@@ -54,7 +54,7 @@ export default function Footer() {
             <p>Where Living Systems <br /> meet Thinking Systems</p>
             <div className="footer-info" style={{ marginTop: '1rem', fontSize: '0.875rem', color: '#94a3b8', lineHeight: 1.6 }}>
               COREX CEO. 유동규<br />
-              E-mail: eqjsro@gmail.com<br />
+              E-mail: 22qjsro@corexbiotech.com<br />
               Address: 강원특별자치도 춘천시 동산면 종자리로 33-7<br /><br />
               &copy; 2025 COREX Team. All rights reserved.
             </div>

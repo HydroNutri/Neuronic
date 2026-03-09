@@ -83,77 +83,88 @@
 
 /* Contact Info */
 .contact-info {
-    display: grid;
-    gap: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
 }
 
-.info-card {
+.info-block {
     background: white;
-    padding: var(--spacing-2xl);
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-medium);
-    text-align: center;
-    transition: var(--transition-normal);
+    overflow: hidden;
 }
 
-.info-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-heavy);
+.info-row {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-2xl);
+    border-bottom: 1px solid #f0f0f0;
 }
 
-.info-icon {
-    font-size: 2.5rem;
-    margin-bottom: var(--spacing-lg);
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.info-row-icon {
     color: var(--primary-green);
+    flex-shrink: 0;
+    margin-top: 2px;
 }
 
-.info-card h3 {
-    color: var(--primary-green);
-    margin-bottom: var(--spacing-md);
-    font-size: var(--fs-lg);
-    font-weight: 600;
-}
-
-.info-card p {
+.info-label {
+    display: block;
+    font-size: var(--fs-sm);
     color: var(--text-secondary);
-    line-height: 1.6;
+    margin-bottom: 4px;
+    letter-spacing: 0.03em;
 }
 
-.info-card a {
+.info-row p {
+    color: var(--text-primary);
+    line-height: 1.6;
+    margin: 0;
+    font-size: var(--fs-base);
+}
+
+.info-row a {
     color: var(--primary-green);
     text-decoration: none;
-    font-weight: 500;
 }
 
-.info-card a:hover {
+.info-row a:hover {
     text-decoration: underline;
+}
+
+.info-row--social {
+    align-items: center;
+    padding: var(--spacing-xl) var(--spacing-2xl);
 }
 
 .social-links {
     display: flex;
-    justify-content: center;
-    gap: var(--spacing-lg);
-    margin-top: var(--spacing-lg);
+    flex-direction: column;
+    gap: var(--spacing-md);
+    width: 100%;
 }
 
 .social-link {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 48px;
-    height: 48px;
-    background: var(--bg-light);
-    border-radius: 50%;
-    color: var(--primary-green);
-    font-size: 1.3rem;
-    transition: all 0.3s ease;
+    gap: var(--spacing-md);
+    color: var(--text-secondary);
     text-decoration: none;
+    font-size: var(--fs-sm);
+    transition: color 0.2s ease;
+}
+
+.social-link span {
+    font-size: var(--fs-sm);
 }
 
 .social-link:hover {
-    background: var(--primary-green);
-    color: white;
-    transform: scale(1.1);
+    color: var(--primary-green);
+    text-decoration: none;
 }
 
 /* Responsive */

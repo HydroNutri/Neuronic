@@ -314,15 +314,19 @@
 }
 
 .problem-solution li::before {
-    content: '⚠️';
+    content: '–';
     position: absolute;
     left: 0;
+    color: var(--text-secondary);
+    font-weight: 600;
 }
 
 .our-solution li::before {
-    content: '✅';
+    content: '✓';
     position: absolute;
     left: 0;
+    color: var(--primary-green);
+    font-weight: 700;
 }
 
 .our-solution strong {
@@ -675,77 +679,83 @@
     background: var(--bg-light);
 }
 
-.pipeline-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-2xl);
-    max-width: 1100px;
+.pipeline-table {
+    max-width: 1000px;
     margin: 0 auto;
-    position: relative;
-}
-
-.pipeline-card {
     background: white;
     border-radius: 20px;
+    border: 1px solid #e8eaed;
+    overflow: hidden;
+}
+
+.pipeline-row {
+    display: grid;
+    grid-template-columns: 72px 1fr 220px;
+    align-items: center;
+    gap: var(--spacing-2xl);
     padding: var(--spacing-2xl);
+    border-bottom: 1px solid #f3f4f6;
+    transition: background 0.2s ease;
+}
+
+.pipeline-row:last-child {
+    border-bottom: none;
+}
+
+.pipeline-row:hover {
+    background: rgba(0, 191, 216, 0.025);
+}
+
+.pipeline-row-num {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: rgba(0, 191, 216, 0.18);
+    line-height: 1;
     text-align: center;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    position: relative;
 }
 
-.pipeline-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+.pipeline-row-main {
+    padding: var(--spacing-sm) 0;
 }
 
-.pipeline-step {
-    position: absolute;
-    top: -14px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--primary-gradient);
-    color: white;
-    font-size: var(--fs-xs);
-    font-weight: 700;
-    padding: 4px 16px;
-    border-radius: 999px;
-    letter-spacing: 1px;
+.pipeline-row-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
 }
 
-.pipeline-icon {
-    font-size: 3rem;
-    margin: var(--spacing-lg) 0 var(--spacing-md);
-}
-
-.pipeline-title {
-    font-size: var(--fs-xl);
-    font-weight: 700;
+.pipeline-row-icon {
     color: var(--primary-green);
-    margin-bottom: var(--spacing-xs);
+    flex-shrink: 0;
 }
 
-.pipeline-subtitle {
-    font-size: var(--fs-sm);
+.pipeline-row-title {
+    font-size: var(--fs-lg);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 2px;
+}
+
+.pipeline-row-sub {
+    font-size: var(--fs-xs);
     font-weight: 600;
-    color: var(--text-secondary);
+    letter-spacing: 1.5px;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: var(--spacing-md);
+    color: var(--primary-green);
 }
 
-.pipeline-desc {
+.pipeline-row-desc {
     font-size: var(--fs-sm);
     color: var(--text-secondary);
     line-height: 1.6;
-    margin-bottom: var(--spacing-lg);
 }
 
-.pipeline-tags {
+.pipeline-row-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .pipeline-tag {
@@ -759,66 +769,81 @@
     border: 1px solid rgba(0, 191, 216, 0.15);
 }
 
-.pipeline-arrow {
-    display: none;
-    position: absolute;
-    right: -28px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1.5rem;
-    color: var(--primary-green);
-    font-weight: 700;
-    z-index: 5;
-}
-
-@media (min-width: 769px) {
-    .pipeline-arrow {
-        display: block;
-    }
-}
-
 /* Application Areas */
 .vm-applications {
     background: white;
 }
 
-.app-grid {
+.app-layout {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--spacing-xl);
+    grid-template-columns: 1fr 2fr;
+    gap: var(--spacing-4xl);
+    align-items: start;
     max-width: 1100px;
     margin: 0 auto;
 }
 
-.app-card {
-    background: var(--bg-light);
-    border-radius: 16px;
-    padding: var(--spacing-2xl) var(--spacing-xl);
-    text-align: center;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
+.app-intro {
+    position: sticky;
+    top: 100px;
 }
 
-.app-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
-    border-color: var(--app-color);
-    background: white;
-}
-
-.app-icon {
-    font-size: 2.5rem;
+.app-intro .vm-label {
     margin-bottom: var(--spacing-md);
 }
 
-.app-title {
-    font-size: var(--fs-lg);
+.app-intro h2 {
+    font-size: var(--fs-3xl);
     font-weight: 700;
-    color: var(--app-color);
-    margin-bottom: var(--spacing-sm);
+    color: var(--text-primary);
+    line-height: 1.3;
+    margin-bottom: var(--spacing-lg);
 }
 
-.app-desc {
+.app-intro > p {
+    font-size: var(--fs-base);
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.app-list {
+    border-radius: 20px;
+    border: 1px solid #e8eaed;
+    overflow: hidden;
+}
+
+.app-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-xl) var(--spacing-2xl);
+    border-bottom: 1px solid #eceef0;
+    transition: background 0.2s ease;
+    background: white;
+}
+
+.app-item:last-child {
+    border-bottom: none;
+}
+
+.app-item:hover {
+    background: rgba(0, 191, 216, 0.025);
+}
+
+.app-item-icon {
+    color: var(--app-color);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.app-item h3 {
+    font-size: var(--fs-base);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.app-item p {
     font-size: var(--fs-sm);
     color: var(--text-secondary);
     line-height: 1.6;
@@ -911,13 +936,21 @@
 
     .hide-mobile { display: none; }
 
-    .pipeline-grid {
-        grid-template-columns: 1fr;
-        max-width: 400px;
+    .pipeline-row {
+        grid-template-columns: 48px 1fr;
     }
 
-    .app-grid {
-        grid-template-columns: 1fr 1fr;
+    .pipeline-row-tags {
+        display: none;
+    }
+
+    .app-layout {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+
+    .app-intro {
+        position: static;
     }
 
     .roadmap-phase {
@@ -933,10 +966,8 @@
 }
 
 @media (max-width: 480px) {
-    .app-grid {
-        grid-template-columns: 1fr;
-        max-width: 320px;
-        margin: 0 auto;
+    .pipeline-row-num {
+        font-size: 2rem;
     }
 }
 

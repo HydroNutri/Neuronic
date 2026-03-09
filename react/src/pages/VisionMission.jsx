@@ -11,17 +11,66 @@ const aboutSubNav = [
   { label: 'Organization', path: '/about/organization' },
 ];
 
+const IconCrop = () => (
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/>
+    <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+  </svg>
+);
+
+const IconFlaskSm = () => (
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M9 3h6M9 3v7L4 17a2 2 0 0 0 1.84 2.97h12.32A2 2 0 0 0 20 17L15 10V3"/>
+    <path d="M6.5 17.5h11"/>
+  </svg>
+);
+
+const IconSupply = () => (
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M3 9h18M3 15h18M8 3v18M16 3v18"/>
+    <rect x="3" y="3" width="18" height="18" rx="2"/>
+  </svg>
+);
+
+const IconMedical = () => (
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="3" y="3" width="18" height="18" rx="2"/>
+    <path d="M12 8v8M8 12h8"/>
+  </svg>
+);
+
+const IconPharma = () => (
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <path d="m10.5 20.5-7-7a5 5 0 1 1 7-7l7 7a5 5 0 1 1-7 7"/>
+    <path d="m8.5 8.5 7 7"/>
+  </svg>
+);
+
+const IconBeauty = () => (
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M12 2c0 0-7 7.5-7 12a7 7 0 0 0 14 0c0-4.5-7-12-7-12z"/>
+  </svg>
+);
+
+const IconFood = () => (
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M12 22V12"/>
+    <path d="M12 12C12 7 17 4.5 20 4c0 4-2.5 8-8 8z"/>
+    <path d="M12 12C12 7 7 4.5 4 4c0 4 2.5 8 8 8z"/>
+  </svg>
+);
+
 const pipelineSteps = [
-  { step: '01', icon: '🌿', title: 'Smart Farm', subtitle: '정밀 재배', desc: 'AI 알고리즘 기반 기능성 작물 재배', items: ['병풀', '바코파', '특수인삼', '덴드로비움'] },
-  { step: '02', icon: '⚗️', title: 'Bio Extract', subtitle: '추출 · 정제', desc: 'GMP 수준 산업용 추출 농축 공정', items: ['마데카소사이드', '바코사이드', '진세노사이드'] },
-  { step: '03', icon: '💎', title: 'B2B Supply', subtitle: '원료 공급', desc: '의료·뷰티·식품 산업 핵심 원료 납품', items: ['제약', '화장품', '의료기기', '건기식'] },
+  { step: '01', icon: <IconCrop />, title: 'Smart Farm', subtitle: '정밀 재배', desc: 'AI 알고리즘 기반 기능성 작물 재배', items: ['병풀', '바코파', '특수인삼', '덴드로비움'] },
+  { step: '02', icon: <IconFlaskSm />, title: 'Bio Extract', subtitle: '추출 · 정제', desc: 'GMP 수준 산업용 추출 농축 공정', items: ['마데카소사이드', '바코사이드', '진세노사이드'] },
+  { step: '03', icon: <IconSupply />, title: 'B2B Supply', subtitle: '원료 공급', desc: '의료·뷰티·식품 산업 핵심 원료 납품', items: ['제약', '화장품', '의료기기', '건기식'] },
 ];
 
 const applicationAreas = [
-  { icon: '🏥', title: '의료기기', desc: '하이드로겔, 스텐트 코팅, 바이오잉크, 임플란트 소재', color: '#ef4444' },
-  { icon: '💊', title: '제약 · 건기식', desc: '인지기능 개선제, 면역 강화, 개별인정형 원료', color: '#8b5cf6' },
-  { icon: '✨', title: '화장품 · 뷰티', desc: '미백, 항노화, 피부 재생 천연 기능성 원료', color: '#ec4899' },
-  { icon: '🥗', title: '푸드테크', desc: '식물성 단백질, 천연 감미료, 비건 식품 원료', color: '#f59e0b' },
+  { icon: <IconMedical />, title: '의료기기', desc: '하이드로겔, 스텐트 코팅, 바이오잉크, 임플란트 소재', color: '#ef4444' },
+  { icon: <IconPharma />, title: '제약 · 건기식', desc: '인지기능 개선제, 면역 강화, 개별인정형 원료', color: '#8b5cf6' },
+  { icon: <IconBeauty />, title: '화장품 · 뷰티', desc: '미백, 항노화, 피부 재생 천연 기능성 원료', color: '#ec4899' },
+  { icon: <IconFood />, title: '푸드테크', desc: '식물성 단백질, 천연 감미료, 비건 식품 원료', color: '#f59e0b' },
 ];
 
 const goalsPhases = [
@@ -107,20 +156,25 @@ export default function VisionMission() {
       {/* Pipeline Flow */}
       <section className="vm-pipeline section">
         <div className="container">
-          <div className="pipeline-grid">
+          <div className="pipeline-table" ref={addRef}>
             {pipelineSteps.map((step, i) => (
-              <div key={i} className="pipeline-card" ref={addRef}>
-                <div className="pipeline-step">{step.step}</div>
-                <div className="pipeline-icon">{step.icon}</div>
-                <h3 className="pipeline-title">{step.title}</h3>
-                <p className="pipeline-subtitle">{step.subtitle}</p>
-                <p className="pipeline-desc">{step.desc}</p>
-                <div className="pipeline-tags">
+              <div key={i} className="pipeline-row">
+                <div className="pipeline-row-num">{step.step}</div>
+                <div className="pipeline-row-main">
+                  <div className="pipeline-row-header">
+                    <span className="pipeline-row-icon">{step.icon}</span>
+                    <div>
+                      <h3 className="pipeline-row-title">{step.title}</h3>
+                      <p className="pipeline-row-sub">{step.subtitle}</p>
+                    </div>
+                  </div>
+                  <p className="pipeline-row-desc">{step.desc}</p>
+                </div>
+                <div className="pipeline-row-tags">
                   {step.items.map((item, j) => (
                     <span key={j} className="pipeline-tag">{item}</span>
                   ))}
                 </div>
-                {i < pipelineSteps.length - 1 && <div className="pipeline-arrow">→</div>}
               </div>
             ))}
           </div>
@@ -130,20 +184,23 @@ export default function VisionMission() {
       {/* Application Areas */}
       <section className="vm-applications section">
         <div className="container">
-          <h2 className="section-title">응용 분야</h2>
-          <div className="app-grid">
-            {applicationAreas.map((area, i) => (
-              <div
-                key={i}
-                className="app-card"
-                ref={addRef}
-                style={{ '--app-color': area.color }}
-              >
-                <div className="app-icon">{area.icon}</div>
-                <h3 className="app-title">{area.title}</h3>
-                <p className="app-desc">{area.desc}</p>
-              </div>
-            ))}
+          <div className="app-layout">
+            <div className="app-intro" ref={addRef}>
+              <p className="vm-label">APPLICATION</p>
+              <h2>응용 분야</h2>
+              <p>COREX의 바이오 소재는 의료기기·제약·화장품·식품 전반에서 활용되는 고기능성 원료입니다.</p>
+            </div>
+            <div className="app-list" ref={addRef}>
+              {applicationAreas.map((area, i) => (
+                <div key={i} className="app-item" style={{ '--app-color': area.color }}>
+                  <span className="app-item-icon">{area.icon}</span>
+                  <div>
+                    <h3>{area.title}</h3>
+                    <p>{area.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -174,7 +231,7 @@ export default function VisionMission() {
           <div className="why-content">
             <div className="why-text">
               <div className="problem-solution" ref={addRef}>
-                <h3>🌍 산업의 과제</h3>
+                <h3>산업의 과제</h3>
                 <ul>
                   {problemItems.map((item, i) => (
                     <li key={i}>{item}</li>
@@ -182,7 +239,7 @@ export default function VisionMission() {
                 </ul>
               </div>
               <div className="our-solution" ref={addRef}>
-                <h3>💡 COREX의 솔루션</h3>
+                <h3>COREX의 솔루션</h3>
                 <ul>
                   {solutionItems.map((item, i) => (
                     <li key={i}><strong>{item.bold}</strong>{item.text}</li>
