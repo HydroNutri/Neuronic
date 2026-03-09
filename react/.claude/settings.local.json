@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(figma-developer-mcp:*)",
+      "Bash(npm list:*)",
+      "Read(//e/HydroNutri_Web_Page/**)",
+      "Read(//e/HydroNutri_Web_Page/.vscode/**)"
+    ]
+  }
+}

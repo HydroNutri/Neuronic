@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../assets/icons/JIWELL FARM LOGO.png';
 
 const navData = [
   {
@@ -103,7 +102,7 @@ export default function Header() {
       <nav className="nav">
         {/* Logo */}
         <Link to="/" className="logo">
-          <img src={logo} alt="COREX Logo" className="logo-img" />
+          <img src="/icons/LOGO.png" alt="COREX Logo" className="logo-img" />
           <span className="logo-text">COREX</span>
         </Link>
 

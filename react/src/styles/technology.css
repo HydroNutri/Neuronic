@@ -57,7 +57,7 @@
     left: 0;
     width: 100%;
     height: 8px;
-    background: rgba(44, 122, 44, 0.15);
+    background: rgba(0, 191, 216, 0.2);
     border-radius: 4px;
     z-index: -1;
 }
@@ -131,7 +131,7 @@
 }
 
 .tech-core-tag {
-    background: rgba(44, 122, 44, 0.08);
+    background: rgba(0, 191, 216, 0.1);
     color: var(--primary-green);
     padding: 4px 12px;
     border-radius: var(--radius-full);
@@ -170,8 +170,8 @@
 }
 
 .diagram-layer:first-child {
-    background: linear-gradient(135deg, rgba(44, 122, 44, 0.08), rgba(59, 130, 246, 0.08));
-    border: 1px solid rgba(44, 122, 44, 0.15);
+    background: linear-gradient(135deg, rgba(0, 191, 216, 0.08), rgba(0, 150, 199, 0.08));
+    border: 1px solid rgba(0, 191, 216, 0.2);
 }
 
 .layer-title {
@@ -344,7 +344,7 @@
 
 .rm-active .rm-number {
     background: var(--primary-gradient);
-    box-shadow: 0 0 0 6px rgba(44, 122, 44, 0.2);
+    box-shadow: 0 0 0 6px rgba(0, 191, 216, 0.2);
 }
 
 .rm-upcoming .rm-number {
@@ -358,7 +358,7 @@
 .rm-line {
     width: 3px;
     flex: 1;
-    background: linear-gradient(to bottom, rgba(44, 122, 44, 0.3), rgba(44, 122, 44, 0.1));
+    background: linear-gradient(to bottom, rgba(0, 191, 216, 0.3), rgba(0, 191, 216, 0.1));
     border-radius: 2px;
 }
 
@@ -379,7 +379,7 @@
 
 .rm-active .rm-card {
     border-left: 4px solid var(--primary-green);
-    background: linear-gradient(135deg, rgba(44, 122, 44, 0.02), white);
+    background: linear-gradient(135deg, rgba(0, 191, 216, 0.04), white);
 }
 
 .rm-card-header {
@@ -408,7 +408,7 @@
 }
 
 .rm-status-active {
-    background: rgba(44, 122, 44, 0.1);
+    background: rgba(0, 191, 216, 0.1);
     color: var(--primary-green);
 }
 
@@ -454,7 +454,7 @@
     height: 6px;
     border-radius: 50%;
     background: var(--primary-green);
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 .rm-active .rm-milestones li::before {
